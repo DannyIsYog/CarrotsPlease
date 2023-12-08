@@ -1,0 +1,6 @@
+{
+	"food": ["eggs","fish","fruit","grass","meat","milk","savory","spicy","sweets"],
+	"movies": ["horror","musical","romance","western","+18"],
+	"games": ["adventure","fps","horror","platformer","rpg"],
+	"music": ["classical","eletronic","metal","pop","r&b","rock"]
+}

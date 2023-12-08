@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dq68ncpfykjpu"
-path="res://.godot/imported/Action-Adventure.png-00fbaa05caa5b4b61d77377603c0c53b.ctex"
+path="res://.godot/imported/adventure.png-71361cef3e5ea4fe5b80fea47c82cdc6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/Games/Action-Adventure.png"
-dest_files=["res://.godot/imported/Action-Adventure.png-00fbaa05caa5b4b61d77377603c0c53b.ctex"]
+source_file="res://Assets/Icons/games/adventure.png"
+dest_files=["res://.godot/imported/adventure.png-71361cef3e5ea4fe5b80fea47c82cdc6.ctex"]
 
 [params]
 

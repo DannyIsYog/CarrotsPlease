@@ -24,7 +24,7 @@
 			"fps":"like",
 			"horror":"neutral",
 			"platformer":"like",
-			"RPG":"dislike"
+			"rpg":"dislike"
 		 },
 		 "music":{
 			"classical":"neutral",
@@ -59,7 +59,7 @@
 			"fps":"like",
 			"horror":"neutral",
 			"platformer":"like",
-			"RPG":"neutral"
+			"rpg":"neutral"
 		 },
 		 "music":{
 			"classical":"neutral",
@@ -83,7 +83,7 @@
 			"sweets":"like"
 		 },
 		 "movies":{
-			"horror":"like",
+			"horror":"dislike",
 			"musical":"neutral",
 			"romance":"like",
 			"western":"like",
@@ -94,7 +94,7 @@
 			"fps":"like",
 			"horror":"dislike",
 			"platformer":"dislike",
-			"RPG":"like"
+			"rpg":"like"
 		 },
 		 "music":{
 			"classical":"like",
@@ -129,7 +129,7 @@
 			"fps":"neutral",
 			"horror":"neutral",
 			"platformer":"like",
-			"RPG":"like"
+			"rpg":"like"
 		 },
 		 "music":{
 			"classical":"like",
@@ -164,7 +164,7 @@
 			"fps":"like",
 			"horror":"neutral",
 			"platformer":"neutral",
-			"RPG":"like"
+			"rpg":"like"
 		 },
 		 "music":{
 			"classical":"like",
@@ -199,7 +199,7 @@
 			"fps":"like",
 			"horror":"like",
 			"platformer":"like",
-			"RPG":"neutral"
+			"rpg":"neutral"
 		 },
 		 "music":{
 			"classical":"like",
@@ -234,7 +234,7 @@
 			"fps":"like",
 			"horror":"neutral",
 			"platformer":"like",
-			"RPG":"neutral"
+			"rpg":"neutral"
 		 },
 		 "music":{
 			"classical":"like",
@@ -269,7 +269,7 @@
 			"fps":"like",
 			"horror":"like",
 			"platformer":"like",
-			"RPG":"like"
+			"rpg":"like"
 		 },
 		 "music":{
 			"classical":"like",
@@ -304,7 +304,7 @@
 			"fps":"neutral",
 			"horror":"neutral",
 			"platformer":"like",
-			"RPG":"like"
+			"rpg":"like"
 		 },
 		 "music":{
 			"classical":"like",
@@ -339,7 +339,7 @@
 			"fps":"neutral",
 			"horror":"like",
 			"platformer":"like",
-			"RPG":"neutral"
+			"rpg":"neutral"
 		 },
 		 "music":{
 			"classical":"like",
@@ -374,7 +374,7 @@
 		"fps": "like",
 		"horror": "dislike",
 		"platformer": "like",
-		"RPG": "neutral"
+		"rpg": "neutral"
 	  },
 	  "music": {
 		"classical": "like",
@@ -411,7 +411,7 @@
 				"fps":"like",
 				"horror":"neutral",
 				"platformer":"like",
-				"RPG":"neutral"
+				"rpg":"neutral"
 			 },
 			 "music":{
 				"classical":"neutral",
@@ -446,7 +446,7 @@
 				"fps":"dislike",
 				"horror":"dislike",
 				"platformer":"neutral",
-				"RPG":"neutral"
+				"rpg":"neutral"
 			 },
 			 "music":{
 				"classical":"neutral",
@@ -481,7 +481,7 @@
 			"fps":"dislike",
 			"horror":"neutral",
 			"platformer":"like",
-			"RPG":"like"
+			"rpg":"like"
 		 },
 		 "music":{
 			"classical":"neutral",
@@ -516,7 +516,7 @@
 			"fps":"dislike",
 			"horror":"dislike",
 			"platformer":"like",
-			"RPG":"like"
+			"rpg":"like"
 		 },
 		 "music":{
 			"classical":"neutral",
@@ -551,7 +551,7 @@
 			"fps":"neutral",
 			"horror":"like",
 			"platformer":"like",
-			"RPG":"dislike"
+			"rpg":"dislike"
 		 },
 		 "music":{
 			"classical":"like",
@@ -586,7 +586,7 @@
 			"fps":"neutral",
 			"horror":"like",
 			"platformer":"like",
-			"RPG":"dislike"
+			"rpg":"dislike"
 		 },
 		 "music":{
 			"classical":"dislike",
@@ -621,7 +621,7 @@
 			"fps":"dislike",
 			"horror":"dislike",
 			"platformer":"dislike",
-			"RPG":"neutral"
+			"rpg":"neutral"
 		 },
 		 "music":{
 			"classical":"neutral",
@@ -656,7 +656,7 @@
 			"fps":"dislike",
 			"horror":"dislike",
 			"platformer":"neutral",
-			"RPG":"like"
+			"rpg":"like"
 		 },
 		 "music":{
 			"classical":"neutral",
@@ -691,7 +691,7 @@
 			"fps":"dislike",
 			"horror":"neutral",
 			"platformer":"neutral",
-			"RPG":"like"
+			"rpg":"like"
 		 },
 		 "music":{
 			"classical":"neutral",

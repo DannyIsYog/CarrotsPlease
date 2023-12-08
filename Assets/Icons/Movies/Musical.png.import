@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csrvavodm2awu"
-path="res://.godot/imported/Musical.png-c9a29b447173b8123eb23bceb4c38fe3.ctex"
+path="res://.godot/imported/musical.png-121953a56c5aeb7493cf5e8cb7572acf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/Movies/Musical.png"
-dest_files=["res://.godot/imported/Musical.png-c9a29b447173b8123eb23bceb4c38fe3.ctex"]
+source_file="res://Assets/Icons/movies/musical.png"
+dest_files=["res://.godot/imported/musical.png-121953a56c5aeb7493cf5e8cb7572acf.ctex"]
 
 [params]
 

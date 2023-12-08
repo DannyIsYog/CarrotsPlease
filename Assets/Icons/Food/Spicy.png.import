@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpyit6llu3veb"
-path="res://.godot/imported/Spicy.png-8f95aaf8252531bba2eba440e25c3763.ctex"
+path="res://.godot/imported/spicy.png-dc49eff4db633d160011acbeb38ad6ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/Food/Spicy.png"
-dest_files=["res://.godot/imported/Spicy.png-8f95aaf8252531bba2eba440e25c3763.ctex"]
+source_file="res://Assets/Icons/food/spicy.png"
+dest_files=["res://.godot/imported/spicy.png-dc49eff4db633d160011acbeb38ad6ef.ctex"]
 
 [params]
 

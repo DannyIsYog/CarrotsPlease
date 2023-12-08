@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buuvsbai2wpcn"
-path="res://.godot/imported/Meat.png-6b9f2754c0d6b5a46e2ae6e22cfff620.ctex"
+path="res://.godot/imported/meat.png-c9ae8453829f6cbe03705672c1be1351.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/Food/Meat.png"
-dest_files=["res://.godot/imported/Meat.png-6b9f2754c0d6b5a46e2ae6e22cfff620.ctex"]
+source_file="res://Assets/Icons/food/meat.png"
+dest_files=["res://.godot/imported/meat.png-c9ae8453829f6cbe03705672c1be1351.ctex"]
 
 [params]
 

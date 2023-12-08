@@ -1,61 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://orgjhxybnlhh"]
+[gd_scene load_steps=4 format=3 uid="uid://orgjhxybnlhh"]
 
 [ext_resource type="Script" path="res://Game/Scripts/investigationRoom.gd" id="1_8k7r5"]
 [ext_resource type="PackedScene" uid="uid://bidgs0vtt2b06" path="res://Objects/Scenes/item.tscn" id="1_wkqbx"]
+[ext_resource type="PackedScene" uid="uid://dr7hp642bh15s" path="res://Objects/Scenes/member.tscn" id="3_f1px0"]
 
-[node name="InvestigationRoom" type="Node2D"]
+[node name="InvestigationRoom" type="Node2D" node_paths=PackedStringArray("members_spawn_points", "items_spawn_points")]
 script = ExtResource("1_8k7r5")
+members_spawn_points = [NodePath("SpawnPoints/Members/Member1"), NodePath("SpawnPoints/Members/Member2"), NodePath("SpawnPoints/Members/Member3"), NodePath("SpawnPoints/Members/Member4"), NodePath("SpawnPoints/Members/Member5"), NodePath("SpawnPoints/Members/Member6"), NodePath("SpawnPoints/Members/Member7"), NodePath("SpawnPoints/Members/Member8"), NodePath("SpawnPoints/Members/Member9"), NodePath("SpawnPoints/Members/Member10")]
+items_spawn_points = [NodePath("SpawnPoints/Items/Item1"), NodePath("SpawnPoints/Items/Item2"), NodePath("SpawnPoints/Items/Item3"), NodePath("SpawnPoints/Items/Item4")]
+item_scene = ExtResource("1_wkqbx")
+member_scene = ExtResource("3_f1px0")
 json_file_path = "res://Assets/data.json"
-
-[node name="Item6" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(200, 250)
-
-[node name="Item7" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(200, 550)
-
-[node name="Item8" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(540, 250)
-
-[node name="Item9" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(540, 550)
-
-[node name="Item10" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(950, 250)
-
-[node name="Item11" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(950, 550)
-
-[node name="Item12" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(1300, 250)
-
-[node name="Item13" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(1300, 550)
-
-[node name="Item14" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(1700, 250)
-
-[node name="Item15" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(1700, 550)
-
-[node name="Item" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(200, 900)
-movable = true
-
-[node name="Item2" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(500, 900)
-movable = true
-
-[node name="Item3" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(800, 900)
-movable = true
-
-[node name="Item4" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(1100, 900)
-movable = true
-
-[node name="Item5" parent="." instance=ExtResource("1_wkqbx")]
-position = Vector2(1700, 900)
-movable = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 301.0
@@ -73,3 +28,58 @@ offset_bottom = 146.0
 theme_override_font_sizes/normal_font_size = 80
 bbcode_enabled = true
 text = "[center]01:00[/center]"
+
+[node name="SpawnPoints" type="Node2D" parent="."]
+
+[node name="Members" type="Node2D" parent="SpawnPoints"]
+
+[node name="Member1" type="Node2D" parent="SpawnPoints/Members"]
+position = Vector2(200, 250)
+
+[node name="Member2" type="Node2D" parent="SpawnPoints/Members"]
+position = Vector2(200, 550)
+
+[node name="Member3" type="Node2D" parent="SpawnPoints/Members"]
+position = Vector2(540, 250)
+
+[node name="Member4" type="Node2D" parent="SpawnPoints/Members"]
+position = Vector2(540, 550)
+
+[node name="Member5" type="Node2D" parent="SpawnPoints/Members"]
+position = Vector2(950, 250)
+
+[node name="Member6" type="Node2D" parent="SpawnPoints/Members"]
+position = Vector2(950, 550)
+
+[node name="Member7" type="Node2D" parent="SpawnPoints/Members"]
+position = Vector2(1300, 250)
+
+[node name="Member8" type="Node2D" parent="SpawnPoints/Members"]
+position = Vector2(1300, 550)
+
+[node name="Member9" type="Node2D" parent="SpawnPoints/Members"]
+position = Vector2(1700, 250)
+
+[node name="Member10" type="Node2D" parent="SpawnPoints/Members"]
+position = Vector2(1700, 550)
+
+[node name="Items" type="Node2D" parent="SpawnPoints"]
+
+[node name="Item1" type="Node2D" parent="SpawnPoints/Items"]
+position = Vector2(200, 900)
+
+[node name="Item2" type="Node2D" parent="SpawnPoints/Items"]
+position = Vector2(500, 900)
+
+[node name="Item3" type="Node2D" parent="SpawnPoints/Items"]
+position = Vector2(800, 900)
+
+[node name="Item4" type="Node2D" parent="SpawnPoints/Items"]
+position = Vector2(1100, 900)
+
+[node name="Sus" type="Node2D" parent="SpawnPoints"]
+position = Vector2(1700, 900)
+
+[node name="Members" type="Node2D" parent="."]
+
+[node name="Items" type="Node2D" parent="."]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwgrrk4nypsy"
-path="res://.godot/imported/Egg.png-076eb1dc3d45c50008a60c4222e82e97.ctex"
+uid="uid://bu5jwnkmeqys5"
+path="res://.godot/imported/western.png-dbf63b32596b02b0d09589a620d4df9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/Food/Egg.png"
-dest_files=["res://.godot/imported/Egg.png-076eb1dc3d45c50008a60c4222e82e97.ctex"]
+source_file="res://Assets/Icons/movies/western.png"
+dest_files=["res://.godot/imported/western.png-dbf63b32596b02b0d09589a620d4df9c.ctex"]
 
 [params]
 

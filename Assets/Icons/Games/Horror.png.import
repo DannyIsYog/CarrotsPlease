@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buarqvmlpdfi7"
-path="res://.godot/imported/Horror.png-33aaeae5892354fb1f0f2b6c5b37bb3c.ctex"
+path="res://.godot/imported/horror.png-ef647c3f46f36177a17bd115f126266a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/Games/Horror.png"
-dest_files=["res://.godot/imported/Horror.png-33aaeae5892354fb1f0f2b6c5b37bb3c.ctex"]
+source_file="res://Assets/Icons/games/horror.png"
+dest_files=["res://.godot/imported/horror.png-ef647c3f46f36177a17bd115f126266a.ctex"]
 
 [params]
 
