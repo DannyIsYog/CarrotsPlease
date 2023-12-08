@@ -1,28 +1,40 @@
 [gd_scene load_steps=5 format=3 uid="uid://bidgs0vtt2b06"]
 
 [ext_resource type="Script" path="res://Objects/Scripts/item.gd" id="1_6eeuo"]
-[ext_resource type="Texture2D" uid="uid://cadwjx2ewirfc" path="res://icon.svg" id="2_sorub"]
+[ext_resource type="Texture2D" uid="uid://cwgrrk4nypsy" path="res://Assets/Icons/Food/Egg.png" id="2_uohqp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yav16"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v1d2g"]
 
 [node name="Item" type="CharacterBody2D"]
+position = Vector2(1, 0)
+scale = Vector2(0.9, 0.9)
+collision_layer = 0
 script = ExtResource("1_6eeuo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(2.5, 2.5)
-texture = ExtResource("2_sorub")
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_uohqp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(16, 16)
+scale = Vector2(11, 11)
 shape = SubResource("RectangleShape2D_yav16")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-scale = Vector2(16, 16)
+scale = Vector2(11, 11)
 shape = SubResource("RectangleShape2D_v1d2g")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -109.0
+offset_top = 109.0
+offset_right = 110.0
+offset_bottom = 175.0
+theme_override_font_sizes/normal_font_size = 41
+bbcode_enabled = true
+text = "[center]Adventure[/center]"
 
 [connection signal="mouse_entered" from="Area2D" to="." method="mouse_entered"]
 [connection signal="mouse_exited" from="Area2D" to="." method="mouse_exited"]
