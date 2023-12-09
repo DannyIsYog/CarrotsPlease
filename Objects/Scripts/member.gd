@@ -29,12 +29,20 @@ func _ready():
 	
 func get_like(category, item_name):
 	var path_to_image = "res://Assets/Emotions/" + likes[category][item_name] + ".png"
-
+	var path_to_sfx = "res://Assets/Sound/Emotions/" + likes[category][item_name] + ".wav"
+	
 	var image = Image.new()
-
+	var sfx = AudioStreamPlayer.new()
+	
 	image.load(path_to_image)
+	sfx.stream = load(path_to_sfx)
+	
 	
 	emotionSprite.texture = ImageTexture.create_from_image(image)
+	
+	sfx.autoplay = true
+	sfx.volume_db = -27
+	add_child(sfx)
 	
 	if timer != null:
 		timer.stop()

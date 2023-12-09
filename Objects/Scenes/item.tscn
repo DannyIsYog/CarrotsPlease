@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bidgs0vtt2b06"]
 
 [ext_resource type="Script" path="res://Objects/Scripts/item.gd" id="1_6eeuo"]
-[ext_resource type="Texture2D" uid="uid://cwgrrk4nypsy" path="res://Assets/Icons/food/eggs.png" id="2_blsp0"]
+[ext_resource type="Texture2D" uid="uid://cwgrrk4nypsy" path="res://Assets/Icons/Food/eggs.png" id="2_blsp0"]
 [ext_resource type="FontFile" uid="uid://bjjuye7va31ss" path="res://Assets/Font/LondrinaSolid-Black.ttf" id="3_g0cjm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yav16"]
@@ -40,6 +40,8 @@ theme_override_fonts/normal_font = ExtResource("3_g0cjm")
 theme_override_font_sizes/normal_font_size = 41
 bbcode_enabled = true
 text = "[center]Adventure[/center]"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
 [connection signal="mouse_entered" from="Area2D" to="." method="mouse_entered"]
 [connection signal="mouse_exited" from="Area2D" to="." method="mouse_exited"]

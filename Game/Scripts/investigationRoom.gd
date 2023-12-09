@@ -110,3 +110,11 @@ func load_raindeer_json() -> Dictionary:
 	var json = JSON.new()
 	var finish = json.parse_string(content)
 	return finish["raindeers"]
+
+func new_sfx(sfx_path):
+	var new_sound := AudioStreamPlayer.new()
+	new_sound.autoplay = true
+	new_sound.stream = load(sfx_path)
+	new_sound.volume_db = -27
+	add_child(new_sound)
+	

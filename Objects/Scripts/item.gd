@@ -11,10 +11,12 @@ var newPosition = Vector2()
 @onready var sprite : Sprite2D = $Sprite
 @onready var text : RichTextLabel = $Text
 @onready var investigation_room = get_parent().get_parent()
+@onready var sfx = $AudioStreamPlayer2D
 
 @export var json_file_path : String
 var category_name : String
 var item_name : String
+var path_to_sfx : String
 
 var mouse_in = false
 var reset = false
@@ -25,11 +27,9 @@ func _ready():
 	item_name = item_list[category_name][randi() % item_list[category_name].size()]
 	
 	var path_to_image = "res://Assets/Icons/" + category_name + "/" + item_name + ".png"
-	
+	path_to_sfx =  "res://Assets/Sound/" + category_name + "/" + item_name + ".wav"
 	sprite.texture = load(path_to_image)
-	
 	set_text()
-	
 	
 func _input(event):
 	if event is InputEventMouseButton:
@@ -56,6 +56,7 @@ func _physics_process(delta):
 		self.transform = originalPosition
 		var overlapping_areas = area2D.get_overlapping_areas()
 		if overlapping_areas.size() == 1 and overlapping_areas[0].get_parent().has_method("remove_emotion"):
+			investigation_room.new_sfx(path_to_sfx)
 			print(overlapping_areas[0].get_parent().get_like(category_name,item_name))
 			investigation_room.spawn_item(position)
 			queue_free()

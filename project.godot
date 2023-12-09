@@ -15,6 +15,10 @@ run/main_scene="res://Game/Scenes/Game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+MusicScene="*res://Game/Scenes/MusicScene.tscn"
+
 [display]
 
 window/size/viewport_width=1920
