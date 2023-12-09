@@ -12,10 +12,10 @@ extends Node2D
 func _ready():
 	var game_manager : GameManager = get_parent()
 	if game_manager.is_raindeer:
-		text.text = "[center]You found the raindeer![/center]"
+		text.text = "[center]You found the reindeer![/center]"
 		background.texture = backgroundWin
 	else:
-		text.text = "[center]The raindeer escaped![/center]"
+		text.text = "[center]The reindeer escaped![/center]"
 		background.texture = backgroundLose
 	
 	var path_to_image = "res://Assets/Raindeers/" + game_manager.raindeer_name  + ".png"
