@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://cykkkolsn44kf"
-path="res://.godot/imported/Egg.wav-f9a4ba2d7d89343607d4f7277f95f792.sample"
+uid="uid://dsulwvfob3bjk"
+path="res://.godot/imported/Meat.wav-e3b422aeafb9c08f475740e458d98f0d.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Food/Egg.wav"
-dest_files=["res://.godot/imported/Egg.wav-f9a4ba2d7d89343607d4f7277f95f792.sample"]
+source_file="res://Assets/Sound/Food/Meat.wav"
+dest_files=["res://.godot/imported/Meat.wav-e3b422aeafb9c08f475740e458d98f0d.sample"]
 
 [params]
 

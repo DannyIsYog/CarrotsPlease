@@ -39,6 +39,7 @@ func _physics_process(delta):
 		self.transform = originalPosition
 		var overlapping_areas = area2D.get_overlapping_areas()
 		if(overlapping_areas.size() == 1):
+			investigation_room.new_sfx("res://Assets/Sound/Carrot.wav")
 			print(overlapping_areas[0].get_parent().uncover())
 			queue_free()
 		set_text()

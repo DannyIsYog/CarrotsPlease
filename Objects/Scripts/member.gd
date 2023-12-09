@@ -38,7 +38,6 @@ func get_like(category, item_name):
 	image.load(path_to_image)
 	sfx.stream = load(path_to_sfx)
 	
-	
 	emotionSprite.texture = ImageTexture.create_from_image(image)
 	
 	sfx.autoplay = true
