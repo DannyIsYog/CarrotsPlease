@@ -37,11 +37,13 @@ func get_like(category, item_name):
 	
 	emotionSprite.texture = ImageTexture.create_from_image(image)
 	
+	if timer != null:
+		timer.stop()
 	timer = Timer.new()
 	add_child(timer)
 	var callable = Callable(self, "remove_emotion")
 	timer.timeout.connect(callable)
-	timer.set_wait_time(2.0)
+	timer.set_wait_time(1.5)
 	timer.start()
 	
 	return likes[category][item_name]
@@ -51,12 +53,8 @@ func remove_emotion():
 
 func set_member(username, likes):
 	var path_to_image = "res://Assets/Members/" + username + ".png"
-
-	var image = Image.new()
-
-	image.load(path_to_image)
 	
-	sprite.texture = ImageTexture.create_from_image(image)
+	sprite.texture = load(path_to_image)
 	
 	text.text = "[center]" + username.split(" ")[0] + "[/center]\n" + "[center]" + username.split(" ")[1] + "[/center]"
 	print(username)

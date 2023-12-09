@@ -25,12 +25,8 @@ func _ready():
 	item_name = item_list[category_name][randi() % item_list[category_name].size()]
 	
 	var path_to_image = "res://Assets/Icons/" + category_name + "/" + item_name + ".png"
-
-	var image = Image.new()
-
-	image.load(path_to_image)
 	
-	sprite.texture = ImageTexture.create_from_image(image)
+	sprite.texture = load(path_to_image)
 	
 	set_text()
 	
