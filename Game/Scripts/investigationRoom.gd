@@ -125,6 +125,5 @@ func new_sfx(sfx_path):
 	new_sound.stream = load(sfx_path)
 	new_sound.volume_db = -27
 	add_child(new_sound)
-	await new_sound.finished
-	new_sound.queue_free()
+	new_sound.finished.connect(new_sound.queue_free)
 	

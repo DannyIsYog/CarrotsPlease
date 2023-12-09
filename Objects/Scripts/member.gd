@@ -43,6 +43,7 @@ func get_like(category, item_name):
 	sfx.autoplay = true
 	sfx.volume_db = -27
 	add_child(sfx)
+	sfx.finished.connect(sfx.queue_free)
 	
 	if timer != null:
 		timer.stop()
