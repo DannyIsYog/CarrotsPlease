@@ -1,16 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://chyloxexpu330"]
+[gd_scene load_steps=6 format=3 uid="uid://chyloxexpu330"]
 
 [ext_resource type="Script" path="res://Game/Scripts/end_investigation.gd" id="1_8umkb"]
 [ext_resource type="Texture2D" uid="uid://bgsvo5vcw31xr" path="res://Assets/EndInvestigation/Lose.jpg" id="2_t45tl"]
-[ext_resource type="Texture2D" uid="uid://bxkgig4532ww6" path="res://Assets/EndInvestigation/Win.jpg" id="2_ulovp"]
 [ext_resource type="FontFile" uid="uid://bjjuye7va31ss" path="res://Assets/Font/LondrinaSolid-Black.ttf" id="3_yw368"]
 [ext_resource type="Texture2D" uid="uid://ceope8c7tel7g" path="res://Assets/Raindeers/Generic.png" id="6_gxrtl"]
-[ext_resource type="PackedScene" uid="uid://d3w04wrgj8udv" path="res://Game/Scenes/MainMenu/back_white_to_main_menu_button.tscn" id="6_pcytq"]
+[ext_resource type="PackedScene" uid="uid://b8ohgq0bf0byi" path="res://Game/Scenes/MainMenu/back_white_to_main_menu_button.tscn" id="6_pcytq"]
 
 [node name="EndInvestigationScreen" type="Node2D"]
 script = ExtResource("1_8umkb")
-backgroundWin = ExtResource("2_ulovp")
-backgroundLose = ExtResource("2_t45tl")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
