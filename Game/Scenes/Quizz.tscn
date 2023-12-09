@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://beqo3jdxsub46"]
+[gd_scene load_steps=8 format=3 uid="uid://beqo3jdxsub46"]
 
 [ext_resource type="Script" path="res://Game/Scripts/Quizz/quizz_manager.gd" id="1_fe76o"]
 [ext_resource type="Texture2D" uid="uid://c3jdbbrjx1bhc" path="res://Assets/Gameplay/Quadrado_branco.png" id="1_mhh23"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c8wlcjx1y4d01" path="res://Game/Scenes/Quizz/dislike_button.tscn" id="4_cyr2i"]
 [ext_resource type="PackedScene" uid="uid://c3i4q6dvwcrne" path="res://Game/Scenes/Quizz/like_button.tscn" id="5_xuitf"]
 [ext_resource type="PackedScene" uid="uid://bvu88bnsdekbv" path="res://Game/Scenes/Quizz/neutral_button.tscn" id="6_s3pap"]
+[ext_resource type="PackedScene" uid="uid://bm1llxempcux5" path="res://Game/Scenes/MainMenu/back_to_main_menu_button.tscn" id="7_2vkhb"]
 
 [node name="Quizz" type="Node2D" node_paths=PackedStringArray("buttons")]
 script = ExtResource("1_fe76o")
@@ -37,13 +38,16 @@ bbcode_enabled = true
 text = "[center]Do you enjoy spicy foods?[/center]"
 
 [node name="dislike_button" parent="." instance=ExtResource("4_cyr2i")]
-position = Vector2(407, 529)
+position = Vector2(620, 550)
 
 [node name="like_button" parent="." instance=ExtResource("5_xuitf")]
-position = Vector2(1371, 536)
+position = Vector2(1300, 550)
 
 [node name="neutral_button" parent="." instance=ExtResource("6_s3pap")]
-position = Vector2(901, 539)
+position = Vector2(960, 550)
 
 [node name="RaindeerImage" type="Sprite2D" parent="."]
 position = Vector2(960, 583)
+
+[node name="back_to_main_menu_button" parent="." instance=ExtResource("7_2vkhb")]
+position = Vector2(221, 211)

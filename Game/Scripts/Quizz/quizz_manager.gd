@@ -34,7 +34,10 @@ func set_question():
 	var category = questions[0][0]
 	var item = questions[0][1]
 	if category == "food":
-		question_text.text = "[center]Do you enjoy " + item + "?[/center]"
+		if item == "spicy":
+			question_text.text = "[center]Do you enjoy " + item + " foods?[/center]"
+		else:
+			question_text.text = "[center]Do you enjoy " + item + "?[/center]"
 	elif category == "music":
 		question_text.text = "[center]Do you enjoy " + item + " music?[/center]"
 	elif category == "movies":
