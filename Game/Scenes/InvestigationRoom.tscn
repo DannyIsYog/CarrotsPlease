@@ -12,6 +12,8 @@ item_scene = ExtResource("1_wkqbx")
 member_scene = ExtResource("3_f1px0")
 json_file_path = "res://Assets/data.json"
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 301.0
 offset_right = 1640.0

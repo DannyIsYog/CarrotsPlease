@@ -32,7 +32,7 @@ func _ready():
 	
 	sprite.texture = ImageTexture.create_from_image(image)
 	
-	text.text = item_name[0].to_upper() + item_name.substr(1,-1)
+	text.text = "[center]" + item_name[0].to_upper() + item_name.substr(1,-1) + "[/center]"
 	
 	
 func _input(event):
