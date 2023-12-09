@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://beqo3jdxsub46"]
+[gd_scene load_steps=8 format=3 uid="uid://b40debju3wyt4"]
 
 [ext_resource type="Script" path="res://Game/Scripts/Quizz/quizz_manager.gd" id="1_fe76o"]
 [ext_resource type="Texture2D" uid="uid://c3jdbbrjx1bhc" path="res://Assets/Gameplay/Quadrado_branco.png" id="1_mhh23"]
