@@ -33,6 +33,7 @@ offset_left = -109.0
 offset_top = 109.0
 offset_right = 110.0
 offset_bottom = 288.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 41
 bbcode_enabled = true
 text = "[center]Adventure[/center]"

@@ -32,7 +32,7 @@ func _ready():
 	
 	sprite.texture = ImageTexture.create_from_image(image)
 	
-	text.text = "[center]" + item_name[0].to_upper() + item_name.substr(1,-1) + "[/center]"
+	set_text()
 	
 	
 func _input(event):
@@ -53,6 +53,7 @@ func _physics_process(delta):
 	if dragging:
 		velocity = (newPosition - position) * Vector2(30, 30)
 		move_and_slide()
+		text.text = ""
 		reset = true
 	if reset and not dragging:
 		reset = false
@@ -62,12 +63,17 @@ func _physics_process(delta):
 			print(overlapping_areas[0].get_parent().get_like(category_name,item_name))
 			investigation_room.spawn_item(position)
 			queue_free()
+			return
+		set_text()
  # Set these two functions through the Area2D Signals!!
 func mouse_entered():
 	mouse_in = true
 
 func mouse_exited():
 	mouse_in = false
+
+func set_text():
+	text.text = "[center]" + item_name[0].to_upper() + item_name.substr(1,-1) + "[/center]"
 
 func load_json() -> Dictionary:
 	var file = FileAccess.open(json_file_path, FileAccess.READ)

@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://orgjhxybnlhh"]
+[gd_scene load_steps=6 format=3 uid="uid://orgjhxybnlhh"]
 
 [ext_resource type="Script" path="res://Game/Scripts/investigationRoom.gd" id="1_8k7r5"]
 [ext_resource type="PackedScene" uid="uid://bidgs0vtt2b06" path="res://Objects/Scenes/item.tscn" id="1_wkqbx"]
 [ext_resource type="PackedScene" uid="uid://dr7hp642bh15s" path="res://Objects/Scenes/member.tscn" id="3_f1px0"]
+[ext_resource type="Texture2D" uid="uid://c3jdbbrjx1bhc" path="res://Assets/Gameplay/Quadrado_branco.png" id="4_4bu4j"]
+[ext_resource type="Texture2D" uid="uid://csl1g2dc4v3kc" path="res://Assets/Gameplay/UI_Bottom.png" id="5_f3k6f"]
 
 [node name="InvestigationRoom" type="Node2D" node_paths=PackedStringArray("members_spawn_points", "items_spawn_points")]
 script = ExtResource("1_8k7r5")
@@ -12,12 +14,27 @@ item_scene = ExtResource("1_wkqbx")
 member_scene = ExtResource("3_f1px0")
 json_file_path = "res://Assets/data.json"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(943, 538)
+scale = Vector2(6.36254, 3.66767)
+texture = ExtResource("4_4bu4j")
+
+[node name="Bottom_UI_Background" type="Sprite2D" parent="."]
+position = Vector2(929, 1042)
+texture = ExtResource("5_f3k6f")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 301.0
 offset_right = 1640.0
 offset_bottom = 155.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/table_odd_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/table_border = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 111
 bbcode_enabled = true
 text = "[center]Who is the raindeer?!?[/center]"
@@ -27,6 +44,13 @@ offset_left = 1630.0
 offset_top = 31.0
 offset_right = 1952.0
 offset_bottom = 146.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/table_odd_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 80
 bbcode_enabled = true
 text = "[center]01:00[/center]"
