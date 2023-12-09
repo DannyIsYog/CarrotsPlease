@@ -1,18 +1,22 @@
-[gd_scene load_steps=6 format=3 uid="uid://orgjhxybnlhh"]
+[gd_scene load_steps=8 format=3 uid="uid://orgjhxybnlhh"]
 
 [ext_resource type="Script" path="res://Game/Scripts/investigationRoom.gd" id="1_8k7r5"]
 [ext_resource type="PackedScene" uid="uid://bidgs0vtt2b06" path="res://Objects/Scenes/item.tscn" id="1_wkqbx"]
 [ext_resource type="PackedScene" uid="uid://dr7hp642bh15s" path="res://Objects/Scenes/member.tscn" id="3_f1px0"]
 [ext_resource type="Texture2D" uid="uid://c3jdbbrjx1bhc" path="res://Assets/Gameplay/Quadrado_branco.png" id="4_4bu4j"]
+[ext_resource type="PackedScene" uid="uid://sow672npr5r8" path="res://Objects/Scenes/carrot.tscn" id="4_y53uv"]
 [ext_resource type="Texture2D" uid="uid://csl1g2dc4v3kc" path="res://Assets/Gameplay/UI_Bottom.png" id="5_f3k6f"]
+[ext_resource type="FontFile" uid="uid://bjjuye7va31ss" path="res://Assets/Font/LondrinaSolid-Black.ttf" id="6_lgus4"]
 
-[node name="InvestigationRoom" type="Node2D" node_paths=PackedStringArray("members_spawn_points", "items_spawn_points")]
+[node name="InvestigationRoom" type="Node2D" node_paths=PackedStringArray("members_spawn_points", "items_spawn_points", "carrot_spawn_point")]
 script = ExtResource("1_8k7r5")
 members_spawn_points = [NodePath("SpawnPoints/Members/Member1"), NodePath("SpawnPoints/Members/Member2"), NodePath("SpawnPoints/Members/Member3"), NodePath("SpawnPoints/Members/Member4"), NodePath("SpawnPoints/Members/Member5"), NodePath("SpawnPoints/Members/Member6"), NodePath("SpawnPoints/Members/Member7"), NodePath("SpawnPoints/Members/Member8"), NodePath("SpawnPoints/Members/Member9"), NodePath("SpawnPoints/Members/Member10")]
 items_spawn_points = [NodePath("SpawnPoints/Items/Item1"), NodePath("SpawnPoints/Items/Item2"), NodePath("SpawnPoints/Items/Item3"), NodePath("SpawnPoints/Items/Item4")]
+carrot_spawn_point = NodePath("SpawnPoints/Carrot")
 item_scene = ExtResource("1_wkqbx")
 member_scene = ExtResource("3_f1px0")
-json_file_path = "res://Assets/data.json"
+carrot_scene = ExtResource("4_y53uv")
+raindeer_json_file_path = "res://Assets/data.json"
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(943, 538)
@@ -24,9 +28,11 @@ position = Vector2(929, 1042)
 texture = ExtResource("5_f3k6f")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 301.0
-offset_right = 1640.0
-offset_bottom = 155.0
+offset_left = 320.0
+offset_top = 19.0
+offset_right = 1600.0
+offset_bottom = 107.0
+size_flags_vertical = 4
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
 theme_override_colors/selection_color = Color(0, 0, 0, 1)
@@ -35,59 +41,61 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/table_odd_row_bg = Color(0, 0, 0, 1)
 theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
 theme_override_colors/table_border = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 111
+theme_override_fonts/normal_font = ExtResource("6_lgus4")
+theme_override_font_sizes/normal_font_size = 70
 bbcode_enabled = true
 text = "[center]Who is the raindeer?!?[/center]"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
-offset_left = 1630.0
-offset_top = 31.0
-offset_right = 1952.0
-offset_bottom = 146.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+offset_left = 1310.0
+offset_top = 16.0
+offset_right = 1608.0
+offset_bottom = 113.0
+theme_override_colors/default_color = Color(0.776471, 0.313726, 0.392157, 1)
 theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
 theme_override_colors/selection_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/table_odd_row_bg = Color(0, 0, 0, 1)
 theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_lgus4")
 theme_override_font_sizes/normal_font_size = 80
 bbcode_enabled = true
-text = "[center]01:00[/center]"
+text = "[center]01:00:00[/center]"
 
 [node name="SpawnPoints" type="Node2D" parent="."]
 
 [node name="Members" type="Node2D" parent="SpawnPoints"]
 
 [node name="Member1" type="Node2D" parent="SpawnPoints/Members"]
-position = Vector2(200, 250)
+position = Vector2(420, 250)
 
 [node name="Member2" type="Node2D" parent="SpawnPoints/Members"]
-position = Vector2(200, 550)
+position = Vector2(420, 570)
 
 [node name="Member3" type="Node2D" parent="SpawnPoints/Members"]
-position = Vector2(540, 250)
+position = Vector2(690, 250)
 
 [node name="Member4" type="Node2D" parent="SpawnPoints/Members"]
-position = Vector2(540, 550)
+position = Vector2(690, 570)
 
 [node name="Member5" type="Node2D" parent="SpawnPoints/Members"]
-position = Vector2(950, 250)
+position = Vector2(960, 250)
 
 [node name="Member6" type="Node2D" parent="SpawnPoints/Members"]
-position = Vector2(950, 550)
+position = Vector2(960, 570)
 
 [node name="Member7" type="Node2D" parent="SpawnPoints/Members"]
-position = Vector2(1300, 250)
+position = Vector2(1230, 250)
 
 [node name="Member8" type="Node2D" parent="SpawnPoints/Members"]
-position = Vector2(1300, 550)
+position = Vector2(1230, 570)
 
 [node name="Member9" type="Node2D" parent="SpawnPoints/Members"]
-position = Vector2(1700, 250)
+position = Vector2(1500, 250)
 
 [node name="Member10" type="Node2D" parent="SpawnPoints/Members"]
-position = Vector2(1700, 550)
+position = Vector2(1500, 570)
 
 [node name="Items" type="Node2D" parent="SpawnPoints"]
 
@@ -95,17 +103,19 @@ position = Vector2(1700, 550)
 position = Vector2(200, 900)
 
 [node name="Item2" type="Node2D" parent="SpawnPoints/Items"]
-position = Vector2(500, 900)
+position = Vector2(400, 900)
 
 [node name="Item3" type="Node2D" parent="SpawnPoints/Items"]
-position = Vector2(800, 900)
+position = Vector2(600, 900)
 
 [node name="Item4" type="Node2D" parent="SpawnPoints/Items"]
-position = Vector2(1100, 900)
+position = Vector2(800, 900)
 
-[node name="Sus" type="Node2D" parent="SpawnPoints"]
+[node name="Carrot" type="Node2D" parent="SpawnPoints"]
 position = Vector2(1700, 900)
 
 [node name="Members" type="Node2D" parent="."]
 
 [node name="Items" type="Node2D" parent="."]
+
+[node name="Carrot" type="Node2D" parent="."]

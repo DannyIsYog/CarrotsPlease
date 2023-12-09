@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dr7hp642bh15s"]
+[gd_scene load_steps=7 format=3 uid="uid://dr7hp642bh15s"]
 
 [ext_resource type="Script" path="res://Objects/Scripts/member.gd" id="1_jmy0s"]
 [ext_resource type="Texture2D" uid="uid://cyebwya4uiapx" path="res://Assets/Members/Carlos Marques.png" id="2_w7clh"]
+[ext_resource type="FontFile" uid="uid://d4tjqxm6pt6i" path="res://Assets/Font/LondrinaSolid-Regular.ttf" id="3_4serh"]
 [ext_resource type="Texture2D" uid="uid://dbcykc8py02ne" path="res://Assets/Gameplay/UI_CharacterSelect.png" id="3_78cw4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yav16"]
@@ -31,21 +32,24 @@ shape = SubResource("RectangleShape2D_v1d2g")
 
 [node name="Text" type="RichTextLabel" parent="."]
 offset_left = -109.0
-offset_top = 109.0
+offset_top = 117.889
 offset_right = 110.0
-offset_bottom = 288.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+offset_bottom = 296.889
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/normal_font = ExtResource("3_4serh")
 theme_override_font_sizes/normal_font_size = 41
 bbcode_enabled = true
-text = "[center]Adventure[/center]"
-
-[node name="Emotion" type="Sprite2D" parent="."]
-position = Vector2(84.4444, -121.111)
-scale = Vector2(0.5, 0.5)
+text = "[center]João[/center]"
 
 [node name="Frame" type="Sprite2D" parent="."]
 scale = Vector2(0.695, 0.695)
 texture = ExtResource("3_78cw4")
+
+[node name="Emotion" type="Sprite2D" parent="."]
+position = Vector2(84.4444, -121.111)
+scale = Vector2(0.5, 0.5)
 
 [connection signal="mouse_entered" from="Area2D" to="." method="mouse_entered"]
 [connection signal="mouse_exited" from="Area2D" to="." method="mouse_exited"]
