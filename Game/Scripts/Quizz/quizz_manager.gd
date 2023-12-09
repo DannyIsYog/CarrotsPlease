@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var question_text = $QuestionText
+@onready var science_text = $ScienceText
 @onready var raindeerImage = $RaindeerImage
 @export var buttons : Array[Node2D]
 
@@ -51,7 +52,7 @@ func end_quizz():
 	print(player_raindeer_correspondance)
 	var raindeer_name = findHighestKey(player_raindeer_correspondance)
 	question_text.text = "[center]You are just like " + raindeer_name + "!!![/center]"
-	
+	science_text.text = "[center]Scientifically Proven![/center]"
 	var path_to_image = "res://Assets/Raindeers/" + raindeer_name + ".png"
 	
 	raindeerImage.texture = load(path_to_image)

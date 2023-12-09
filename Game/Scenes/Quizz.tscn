@@ -51,3 +51,22 @@ position = Vector2(960, 583)
 
 [node name="back_to_main_menu_button" parent="." instance=ExtResource("7_2vkhb")]
 position = Vector2(221, 211)
+
+[node name="ScienceText" type="RichTextLabel" parent="."]
+offset_left = 859.0
+offset_top = 1129.0
+offset_right = 2139.0
+offset_bottom = 1337.0
+rotation = -0.56504
+size_flags_vertical = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/table_odd_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/table_border = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_cx6mc")
+theme_override_font_sizes/normal_font_size = 70
+bbcode_enabled = true
