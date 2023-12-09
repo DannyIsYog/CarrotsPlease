@@ -34,7 +34,7 @@ func set_question():
 	var category = questions[0][0]
 	var item = questions[0][1]
 	if category == "food":
-		if item == "spicy":
+		if item == "spicy" or item == "savory":
 			question_text.text = "[center]Do you enjoy " + item + " foods?[/center]"
 		else:
 			question_text.text = "[center]Do you enjoy " + item + "?[/center]"
