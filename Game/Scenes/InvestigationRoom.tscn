@@ -46,10 +46,10 @@ theme_override_font_sizes/normal_font_size = 70
 bbcode_enabled = true
 text = "[center]Who is the raindeer?!?[/center]"
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="."]
-offset_left = 1310.0
+[node name="Timer" type="RichTextLabel" parent="."]
+offset_left = 1291.0
 offset_top = 16.0
-offset_right = 1608.0
+offset_right = 1638.0
 offset_bottom = 113.0
 theme_override_colors/default_color = Color(0.776471, 0.313726, 0.392157, 1)
 theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
@@ -61,7 +61,7 @@ theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("6_lgus4")
 theme_override_font_sizes/normal_font_size = 80
 bbcode_enabled = true
-text = "[center]01:00:00[/center]"
+text = "[center]01:00:000[/center]"
 
 [node name="SpawnPoints" type="Node2D" parent="."]
 

@@ -19,7 +19,6 @@ var raindeer_name : String
 var timer = null
 
 func _ready():
-	print("ready item")
 	var member_list = load_json()
 	username = member_list.keys()[investigation_room.get_member_number()]
 	likes = member_list[username]
@@ -57,8 +56,6 @@ func set_member(username, likes):
 	sprite.texture = load(path_to_image)
 	
 	text.text = "[center]" + username.split(" ")[0] + "[/center]\n" + "[center]" + username.split(" ")[1] + "[/center]"
-	print(username)
-	print(likes)
 
 func set_likes(raindeer_name, likes):
 	self.likes = likes
@@ -74,12 +71,11 @@ func uncover():
 
 func reveal():
 	if is_raindeer:
-		var path_to_image = "res://Assets/Raindeers/Raindeer.png"
-		var image = Image.new()
-
-		image.load(path_to_image)
+		var path_to_image = "res://Assets/Raindeers/" + raindeer_name  + ".png"
 	
-		sprite.texture = ImageTexture.create_from_image(image)
+		sprite.texture = load(path_to_image)
+		
+		text.text = "[center]" + raindeer_name + "[/center]"
 
 func load_json() -> Dictionary:
 	var file = FileAccess.open(json_file_path, FileAccess.READ)

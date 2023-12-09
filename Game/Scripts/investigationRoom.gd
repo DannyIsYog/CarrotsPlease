@@ -15,12 +15,16 @@ class_name InvestigationRoom
 @onready var members = $Members
 @onready var carrot = $Carrot
 
+@onready var timer_text = $Timer
+
 var member_numbers = []
 var members_instances : Array[Member]
 var ready_members : int = 0
 
 var timer = null
 var is_raindeer = false
+
+var time = 60000 # in ms
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -33,7 +37,26 @@ func _ready():
 	for spawn_point in members_spawn_points:
 		spawn_member(spawn_point)
 	spawn_carrot(carrot_spawn_point)
-	
+
+func _process(delta):
+	time -= (int(delta*1000) + 1)
+	timer_text.text = formatTime(time)
+
+func formatTime(ms: int) -> String:
+	var minutes = int(ms / 60000)
+	var seconds = int((ms % 60000) / 1000)
+	var milliseconds = int(ms % 1000)
+
+	# Format the time components
+	var formattedMinutes = str(minutes).pad_zeros(2)
+	var formattedSeconds = str(seconds).pad_zeros(2)
+	var formattedMilliseconds = str(milliseconds).pad_zeros(3)
+
+	# Construct the time string
+	var formattedTime = formattedMinutes + ":" + formattedSeconds + ":" + formattedMilliseconds
+
+	return formattedTime
+
 func member_ready():
 	ready_members += 1
 	if ready_members == 10:
