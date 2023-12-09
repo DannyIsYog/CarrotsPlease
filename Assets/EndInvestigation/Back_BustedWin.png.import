@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brfnwyn7di4ql"
-path="res://.godot/imported/classical.png-f16e21d4d1b6427980fce3329b6aaea2.ctex"
+uid="uid://bb4fixgg1hshe"
+path="res://.godot/imported/Back_BustedWin.png-f81605e52de97f23543cb868bf8dcecf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/music/classical.png"
-dest_files=["res://.godot/imported/classical.png-f16e21d4d1b6427980fce3329b6aaea2.ctex"]
+source_file="res://Assets/EndInvestigation/Back_BustedWin.png"
+dest_files=["res://.godot/imported/Back_BustedWin.png-f81605e52de97f23543cb868bf8dcecf.ctex"]
 
 [params]
 

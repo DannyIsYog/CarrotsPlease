@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://52krmv8ysiw8"]
+
+[ext_resource type="Texture2D" uid="uid://bombg0ov3i4xq" path="res://Assets/Credits.jpg" id="1_gtofn"]
+[ext_resource type="PackedScene" uid="uid://bm1llxempcux5" path="res://Game/Scenes/MainMenu/back_to_main_menu_button.tscn" id="2_hxhfr"]
+
+[node name="Credits" type="Node2D"]
+
+[node name="Credits" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_gtofn")
+
+[node name="back_to_main_menu_button" parent="." instance=ExtResource("2_hxhfr")]
+position = Vector2(220, 162)

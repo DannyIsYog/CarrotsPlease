@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brfnwyn7di4ql"
-path="res://.godot/imported/classical.png-f16e21d4d1b6427980fce3329b6aaea2.ctex"
+uid="uid://bgsvo5vcw31xr"
+path="res://.godot/imported/Lose.jpg-9b646c4f71c21c156d8c3bfd6fbab662.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/music/classical.png"
-dest_files=["res://.godot/imported/classical.png-f16e21d4d1b6427980fce3329b6aaea2.ctex"]
+source_file="res://Assets/EndInvestigation/Lose.jpg"
+dest_files=["res://.godot/imported/Lose.jpg-9b646c4f71c21c156d8c3bfd6fbab662.ctex"]
 
 [params]
 

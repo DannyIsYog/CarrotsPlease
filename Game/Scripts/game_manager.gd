@@ -52,6 +52,13 @@ func loadQuizzGame(currentScene):
 	currentScene.queue_free()
 	call_deferred("add_child", quizzGameScene)
 
+func loadCredits(currentScene):
+	loadedScenePath = creditsScenePath
+	var creditsScene = load(creditsScenePath).instantiate()
+	current_active_scene = creditsScene
+	currentScene.queue_free()
+	call_deferred("add_child", creditsScene)
+
 func end_investigation(currentScene, is_raindeer):
 	self.is_raindeer = is_raindeer
 	loadedScenePath = endInvestigationScenePath

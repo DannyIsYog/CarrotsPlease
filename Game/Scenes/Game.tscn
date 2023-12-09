@@ -9,5 +9,6 @@ mainMenuScenePath = "res://Game/Scenes/MainMenu.tscn"
 mainGameScenePath = "res://Game/Scenes/InvestigationRoom.tscn"
 endInvestigationScenePath = "res://Game/Scenes/EndInvestigationScreen.tscn"
 quizzScenePath = "res://Game/Scenes/Quizz.tscn"
+creditsScenePath = "res://Game/Scenes/Credits.tscn"
 
 [node name="MainMenu" parent="." instance=ExtResource("2_63bb5")]
