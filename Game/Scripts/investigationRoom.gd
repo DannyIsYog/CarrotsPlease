@@ -25,6 +25,7 @@ var timer = null
 var is_raindeer = false
 
 var time = 60000 # in ms
+var time_running = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -39,8 +40,14 @@ func _ready():
 	spawn_carrot(carrot_spawn_point)
 
 func _process(delta):
-	time -= (int(delta*1000) + 1)
-	timer_text.text = formatTime(time)
+	if time_running:
+		time -= (int(delta*1000) + 1)
+		if time < 0:
+			time = 0
+			time_running = false
+			carrot.queue_free()
+			reveal_members(false)
+		timer_text.text = formatTime(time)
 
 func formatTime(ms: int) -> String:
 	var minutes = int(ms / 60000)
@@ -90,6 +97,7 @@ func set_raindeer():
 	members_instances[randi() % members_instances.size()].set_likes(raindeer_name, random_deer_likes)
 
 func reveal_members(is_raindeer):
+	time_running = false
 	for member in members_instances:
 		member.reveal()
 	

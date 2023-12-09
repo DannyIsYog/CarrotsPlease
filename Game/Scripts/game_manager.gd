@@ -20,6 +20,7 @@ var loadedScenePath
 @onready var current_active_scene = $MainMenu 
 
 var is_raindeer = false
+var raindeer_name = ""
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

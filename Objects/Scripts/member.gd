@@ -28,6 +28,7 @@ func _ready():
 	investigation_room.member_ready()
 	
 func get_like(category, item_name):
+	get_parent().get_parent().time_running = true
 	var path_to_image = "res://Assets/Emotions/" + likes[category][item_name] + ".png"
 
 	var image = Image.new()
@@ -76,6 +77,7 @@ func reveal():
 		sprite.texture = load(path_to_image)
 		
 		text.text = "[center]" + raindeer_name + "[/center]"
+		investigation_room.get_parent().raindeer_name = raindeer_name
 
 func load_json() -> Dictionary:
 	var file = FileAccess.open(json_file_path, FileAccess.READ)
