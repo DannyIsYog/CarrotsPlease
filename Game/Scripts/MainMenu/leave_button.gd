@@ -5,7 +5,7 @@ var mouse_in = false
 func _input(event):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && mouse_in:
-			print("quizzing")
+			get_tree().quit()
 
 func mouse_entered():
 	mouse_in = true
