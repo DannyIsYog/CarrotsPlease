@@ -10,6 +10,7 @@ var newPosition = Vector2()
 @onready var area2D : Area2D = $Area2D
 @onready var text : RichTextLabel = $Text
 @onready var investigation_room = get_parent().get_parent()
+@onready var animation_player = $AnimationPlayer
 
 var mouse_in = false
 var reset = false
@@ -49,6 +50,8 @@ func set_text():
 
 func mouse_entered():
 	mouse_in = true
+	animation_player.play("hover_up")
 
 func mouse_exited():
 	mouse_in = false
+	animation_player.play("hover_down")

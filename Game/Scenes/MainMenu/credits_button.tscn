@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cvmerax04gd0l"]
+[gd_scene load_steps=9 format=3 uid="uid://cvmerax04gd0l"]
 
 [ext_resource type="Script" path="res://Game/Scripts/MainMenu/credits_button.gd" id="1_iljki"]
 [ext_resource type="Texture2D" uid="uid://xhtb5jjiode6" path="res://Assets/MainMenu/Credits.png" id="2_wkfhn"]
@@ -8,6 +8,96 @@ size = Vector2(18.4848, 7.9798)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v1d2g"]
 size = Vector2(18.3838, 7.87879)
+
+[sub_resource type="Animation" id="Animation_jnndb"]
+resource_name = "hover_up"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.141372]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionShape2D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.141372]
+}
+
+[sub_resource type="Animation" id="Animation_futh7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionShape2D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_o0d6i"]
+resource_name = "hover_down"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D/CollisionShape2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.141372, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.141372, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_33p1l"]
+_data = {
+"RESET": SubResource("Animation_futh7"),
+"hover_down": SubResource("Animation_o0d6i"),
+"hover_up": SubResource("Animation_jnndb")
+}
 
 [node name="credits_button" type="CharacterBody2D"]
 position = Vector2(1, 0)
@@ -30,6 +120,11 @@ shape = SubResource("RectangleShape2D_yav16")
 position = Vector2(-5.24521e-06, 1.11111)
 scale = Vector2(11, 11)
 shape = SubResource("RectangleShape2D_v1d2g")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_33p1l")
+}
 
 [connection signal="mouse_entered" from="Area2D" to="." method="mouse_entered"]
 [connection signal="mouse_exited" from="Area2D" to="." method="mouse_exited"]

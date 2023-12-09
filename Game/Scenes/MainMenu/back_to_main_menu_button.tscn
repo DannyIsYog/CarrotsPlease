@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bm1llxempcux5"]
+[gd_scene load_steps=9 format=3 uid="uid://bm1llxempcux5"]
 
 [ext_resource type="Script" path="res://Game/Scripts/MainMenu/back_to_main_menu_button.gd" id="1_5hwq5"]
 [ext_resource type="Texture2D" uid="uid://c671vkwolf0jh" path="res://Assets/MainMenu/Back_MainMenu.png" id="2_onebd"]
@@ -8,6 +8,96 @@ size = Vector2(18.3838, 9.79798)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v1d2g"]
 size = Vector2(18.3838, 9.79798)
+
+[sub_resource type="Animation" id="Animation_ip5hy"]
+resource_name = "hover_up"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.282743]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionShape2D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.282743]
+}
+
+[sub_resource type="Animation" id="Animation_e53yw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionShape2D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_fcf5d"]
+resource_name = "hover_down"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D/CollisionShape2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.282743, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.282743, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_geoub"]
+_data = {
+"RESET": SubResource("Animation_e53yw"),
+"hover_down": SubResource("Animation_fcf5d"),
+"hover_up": SubResource("Animation_ip5hy")
+}
 
 [node name="back_to_main_menu_button" type="CharacterBody2D"]
 position = Vector2(1, 0)
@@ -30,6 +120,11 @@ shape = SubResource("RectangleShape2D_yav16")
 position = Vector2(-5.24521e-06, -0.555556)
 scale = Vector2(11, 11)
 shape = SubResource("RectangleShape2D_v1d2g")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_geoub")
+}
 
 [connection signal="mouse_entered" from="Area2D" to="." method="mouse_entered"]
 [connection signal="mouse_exited" from="Area2D" to="." method="mouse_exited"]

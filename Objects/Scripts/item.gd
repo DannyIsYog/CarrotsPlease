@@ -12,6 +12,7 @@ var newPosition = Vector2()
 @onready var text : RichTextLabel = $Text
 @onready var investigation_room = get_parent().get_parent()
 @onready var sfx = $AudioStreamPlayer2D
+@onready var animation_player = $AnimationPlayer
 
 @export var json_file_path : String
 var category_name : String
@@ -65,9 +66,11 @@ func _physics_process(delta):
 
 func mouse_entered():
 	mouse_in = true
+	animation_player.play("hover_up")
 
 func mouse_exited():
 	mouse_in = false
+	animation_player.play("hover_down")
 
 func set_text():
 	text.text = "[center]" + item_name[0].to_upper() + item_name.substr(1,-1) + "[/center]"
