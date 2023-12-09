@@ -6,6 +6,8 @@ class_name GameManager
 
 @export_file("*.tscn") var mainGameScenePath
 
+@export_file("*.tscn") var endInvestigationScenePath
+
 @export_file("*.tscn") var quizzScenePath
 
 @export_file("*.tscn") var creditsScenePath
@@ -17,6 +19,7 @@ var loadedScenePath
 @onready var startingScene = $MainMenu
 @onready var current_active_scene = $MainMenu 
 
+var is_raindeer = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -33,3 +36,18 @@ func loadMainMenu(currentScene):
 	current_active_scene = mainMenuScene
 	currentScene.queue_free()
 	call_deferred("add_child", mainMenuScene)
+
+func loadMainGame(currentScene):
+	loadedScenePath = mainGameScenePath
+	var mainGameScene = load(mainGameScenePath).instantiate()
+	current_active_scene = mainGameScene
+	currentScene.queue_free()
+	call_deferred("add_child", mainGameScene)
+
+func end_investigation(currentScene, is_raindeer):
+	self.is_raindeer = is_raindeer
+	loadedScenePath = endInvestigationScenePath
+	var endInvestigationScene = load(endInvestigationScenePath).instantiate()
+	current_active_scene = endInvestigationScene
+	currentScene.queue_free()
+	call_deferred("add_child", endInvestigationScene)

@@ -19,6 +19,9 @@ var member_numbers = []
 var members_instances : Array[Member]
 var ready_members : int = 0
 
+var timer = null
+var is_raindeer = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 
@@ -63,9 +66,20 @@ func set_raindeer():
 	var random_deer_likes = raindeers[raindeer_name]
 	members_instances[randi() % members_instances.size()].set_likes(raindeer_name, random_deer_likes)
 
-func reveal_members():
+func reveal_members(is_raindeer):
 	for member in members_instances:
 		member.reveal()
+	
+	self.is_raindeer = is_raindeer
+	timer = Timer.new()
+	add_child(timer)
+	var callable = Callable(self, "end_game")
+	timer.timeout.connect(callable)
+	timer.set_wait_time(5.0)
+	timer.start()
+
+func end_game():
+	get_parent().end_investigation(self, is_raindeer)
 
 func load_raindeer_json() -> Dictionary:
 	var file = FileAccess.open(raindeer_json_file_path, FileAccess.READ)

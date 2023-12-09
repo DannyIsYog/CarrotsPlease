@@ -71,11 +71,7 @@ func set_likes(raindeer_name, likes):
 	print(raindeer_name)
 
 func uncover():
-	if is_raindeer:
-		print("CAUGHT")
-	else:
-		print("LOSE")
-	investigation_room.reveal_members()
+	investigation_room.reveal_members(is_raindeer)
 	
 
 func reveal():
