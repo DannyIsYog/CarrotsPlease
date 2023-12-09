@@ -45,6 +45,13 @@ func loadMainGame(currentScene):
 	currentScene.queue_free()
 	call_deferred("add_child", mainGameScene)
 
+func loadQuizzGame(currentScene):
+	loadedScenePath = quizzScenePath
+	var quizzGameScene = load(quizzScenePath).instantiate()
+	current_active_scene = quizzGameScene
+	currentScene.queue_free()
+	call_deferred("add_child", quizzGameScene)
+
 func end_investigation(currentScene, is_raindeer):
 	self.is_raindeer = is_raindeer
 	loadedScenePath = endInvestigationScenePath

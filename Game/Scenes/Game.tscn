@@ -8,5 +8,6 @@ script = ExtResource("1_jxbk2")
 mainMenuScenePath = "res://Game/Scenes/MainMenu.tscn"
 mainGameScenePath = "res://Game/Scenes/InvestigationRoom.tscn"
 endInvestigationScenePath = "res://Game/Scenes/EndInvestigationScreen.tscn"
+quizzScenePath = "res://Game/Scenes/Quizz.tscn"
 
 [node name="MainMenu" parent="." instance=ExtResource("2_63bb5")]

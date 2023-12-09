@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://fqeep1n1hwdm" path="res://Assets/MainMenu/Snowflake_Snowball.png" id="2_ivoow"]
 
 [node name="snowball" type="Node2D"]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.25, 0.25)
 script = ExtResource("1_bhfpk")
 
 [node name="Sprite" type="Sprite2D" parent="."]

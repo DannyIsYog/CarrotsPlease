@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://orgjhxybnlhh"]
+[gd_scene load_steps=9 format=3 uid="uid://orgjhxybnlhh"]
 
 [ext_resource type="Script" path="res://Game/Scripts/investigationRoom.gd" id="1_8k7r5"]
 [ext_resource type="PackedScene" uid="uid://bidgs0vtt2b06" path="res://Objects/Scenes/item.tscn" id="1_wkqbx"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://sow672npr5r8" path="res://Objects/Scenes/carrot.tscn" id="4_y53uv"]
 [ext_resource type="Texture2D" uid="uid://csl1g2dc4v3kc" path="res://Assets/Gameplay/UI_Bottom.png" id="5_f3k6f"]
 [ext_resource type="FontFile" uid="uid://bjjuye7va31ss" path="res://Assets/Font/LondrinaSolid-Black.ttf" id="6_lgus4"]
+[ext_resource type="PackedScene" uid="uid://bm1llxempcux5" path="res://Game/Scenes/MainMenu/back_to_main_menu_button.tscn" id="8_qjd2r"]
 
 [node name="InvestigationRoom" type="Node2D" node_paths=PackedStringArray("members_spawn_points", "items_spawn_points", "carrot_spawn_point")]
 script = ExtResource("1_8k7r5")
@@ -119,3 +120,6 @@ position = Vector2(1700, 900)
 [node name="Items" type="Node2D" parent="."]
 
 [node name="Carrot" type="Node2D" parent="."]
+
+[node name="back_to_main_menu_button" parent="." instance=ExtResource("8_qjd2r")]
+position = Vector2(256, 58)

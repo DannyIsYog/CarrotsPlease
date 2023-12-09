@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://beqo3jdxsub46"]
+
+[ext_resource type="Script" path="res://Game/Scripts/Quizz/quizz_manager.gd" id="1_fe76o"]
+[ext_resource type="Texture2D" uid="uid://c3jdbbrjx1bhc" path="res://Assets/Gameplay/Quadrado_branco.png" id="1_mhh23"]
+[ext_resource type="FontFile" uid="uid://bjjuye7va31ss" path="res://Assets/Font/LondrinaSolid-Black.ttf" id="2_cx6mc"]
+[ext_resource type="PackedScene" uid="uid://c8wlcjx1y4d01" path="res://Game/Scenes/Quizz/dislike_button.tscn" id="4_cyr2i"]
+[ext_resource type="PackedScene" uid="uid://c3i4q6dvwcrne" path="res://Game/Scenes/Quizz/like_button.tscn" id="5_xuitf"]
+[ext_resource type="PackedScene" uid="uid://bvu88bnsdekbv" path="res://Game/Scenes/Quizz/neutral_button.tscn" id="6_s3pap"]
+
+[node name="Quizz" type="Node2D" node_paths=PackedStringArray("buttons")]
+script = ExtResource("1_fe76o")
+buttons = [NodePath("dislike_button"), NodePath("like_button"), NodePath("neutral_button")]
+json_file_path = "res://Assets/data.json"
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(943, 538)
+scale = Vector2(6.36254, 3.66767)
+texture = ExtResource("1_mhh23")
+
+[node name="QuestionText" type="RichTextLabel" parent="."]
+offset_left = 320.0
+offset_top = 149.0
+offset_right = 1600.0
+offset_bottom = 357.0
+size_flags_vertical = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/table_odd_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/table_border = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_cx6mc")
+theme_override_font_sizes/normal_font_size = 70
+bbcode_enabled = true
+text = "[center]Do you enjoy spicy foods?[/center]"
+
+[node name="dislike_button" parent="." instance=ExtResource("4_cyr2i")]
+position = Vector2(407, 529)
+
+[node name="like_button" parent="." instance=ExtResource("5_xuitf")]
+position = Vector2(1371, 536)
+
+[node name="neutral_button" parent="." instance=ExtResource("6_s3pap")]
+position = Vector2(901, 539)
+
+[node name="RaindeerImage" type="Sprite2D" parent="."]
+position = Vector2(960, 583)
