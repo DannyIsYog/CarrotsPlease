@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://nklcdu5semhf"]
+
+[ext_resource type="Script" path="res://Game/Scripts/MainMenu/play_button.gd" id="1_kifrw"]
+[ext_resource type="Texture2D" uid="uid://g4huawtm1v11" path="res://Assets/MainMenu/Play.png" id="2_odl7o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yav16"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v1d2g"]
+
+[node name="play_buton" type="CharacterBody2D"]
+position = Vector2(1, 0)
+scale = Vector2(0.9, 0.9)
+collision_layer = 0
+script = ExtResource("1_kifrw")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.37, 0.37)
+texture = ExtResource("2_odl7o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(11, 11)
+shape = SubResource("RectangleShape2D_yav16")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(11, 11)
+shape = SubResource("RectangleShape2D_v1d2g")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="mouse_exited"]

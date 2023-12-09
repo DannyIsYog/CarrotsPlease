@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://cvmerax04gd0l"]
+
+[ext_resource type="Script" path="res://Game/Scripts/MainMenu/credits_button.gd" id="1_iljki"]
+[ext_resource type="Texture2D" uid="uid://xhtb5jjiode6" path="res://Assets/MainMenu/Credits.png" id="2_wkfhn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yav16"]
+size = Vector2(18.4848, 7.9798)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v1d2g"]
+size = Vector2(18.3838, 7.87879)
+
+[node name="credits_button" type="CharacterBody2D"]
+position = Vector2(1, 0)
+scale = Vector2(0.9, 0.9)
+collision_layer = 0
+script = ExtResource("1_iljki")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.37, 0.37)
+texture = ExtResource("2_wkfhn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.555557, 1.66666)
+scale = Vector2(11, 11)
+shape = SubResource("RectangleShape2D_yav16")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-5.24521e-06, 1.11111)
+scale = Vector2(11, 11)
+shape = SubResource("RectangleShape2D_v1d2g")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="mouse_exited"]

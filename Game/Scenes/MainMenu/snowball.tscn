@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjdbhn2gcxd41"]
+
+[ext_resource type="Script" path="res://Game/Scripts/MainMenu/snowball.gd" id="1_bhfpk"]
+[ext_resource type="Texture2D" uid="uid://fqeep1n1hwdm" path="res://Assets/MainMenu/Snowflake_Snowball.png" id="2_ivoow"]
+
+[node name="snowball" type="Node2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_bhfpk")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_ivoow")
