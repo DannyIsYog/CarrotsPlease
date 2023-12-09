@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://cd1qyhbls6bqe"]
+
+[ext_resource type="Texture2D" uid="uid://dcnmjyx8lsyg8" path="res://Assets/Story/Story_Background.png" id="1_0pq5j"]
+[ext_resource type="FontFile" uid="uid://bjjuye7va31ss" path="res://Assets/Font/LondrinaSolid-Black.ttf" id="2_y5yxb"]
+[ext_resource type="PackedScene" uid="uid://ct18u140lfs8p" path="res://Game/Scenes/MainMenu/continue_button.tscn" id="3_rpon1"]
+
+[node name="Story" type="Node2D"]
+
+[node name="StoryBackground" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_0pq5j")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="StoryBackground"]
+offset_left = -639.0
+offset_top = -139.0
+offset_right = 686.0
+offset_bottom = 235.0
+size_flags_vertical = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/table_odd_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/table_border = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_y5yxb")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "[center]Santa was out of ideas of what gifts to offer to some of the GDT members, to solve that problem, he disguised one of his reindeer as one of GDTs members and infiltrated the association. GDT was not happy with this and decided to put all of the present members into a room and question them on their likes and dislikes until the impostor was found.[/center]"
+
+[node name="continue_button" parent="." instance=ExtResource("3_rpon1")]
+position = Vector2(940, 870)

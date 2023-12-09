@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bhmb73s71mr3t"]
 
 [ext_resource type="Script" path="res://Game/Scripts/game_manager.gd" id="1_jxbk2"]
-[ext_resource type="PackedScene" uid="uid://ch4vx665ovsk5" path="res://Game/Scenes/MainMenu.tscn" id="2_63bb5"]
+[ext_resource type="PackedScene" uid="uid://cd1qyhbls6bqe" path="res://Game/Scenes/Story.tscn" id="2_hkx7l"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_jxbk2")
@@ -11,4 +11,4 @@ endInvestigationScenePath = "res://Game/Scenes/EndInvestigationScreen.tscn"
 quizzScenePath = "res://Game/Scenes/Quizz.tscn"
 creditsScenePath = "res://Game/Scenes/Credits.tscn"
 
-[node name="MainMenu" parent="." instance=ExtResource("2_63bb5")]
+[node name="Story" parent="." instance=ExtResource("2_hkx7l")]
