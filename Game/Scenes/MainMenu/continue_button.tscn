@@ -9,33 +9,6 @@ size = Vector2(18.3838, 9.79798)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v1d2g"]
 size = Vector2(18.3838, 9.79798)
 
-[sub_resource type="Animation" id="Animation_p5vdh"]
-resource_name = "hover_up"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0.37, 0.37), Vector2(0.43, 0.43)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Area2D/CollisionShape2D:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(11, 11), Vector2(12, 12)]
-}
-
 [sub_resource type="Animation" id="Animation_ifj52"]
 length = 0.001
 tracks/0/type = "value"
@@ -88,6 +61,33 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(0.43, 0.43), Vector2(0.37, 0.37)]
+}
+
+[sub_resource type="Animation" id="Animation_p5vdh"]
+resource_name = "hover_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.37, 0.37), Vector2(0.43, 0.43)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionShape2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(11, 11), Vector2(12, 12)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_u8x16"]
