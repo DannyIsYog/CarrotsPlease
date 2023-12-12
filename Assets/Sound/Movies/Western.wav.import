@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cccs3io3cuaud"
-path="res://.godot/imported/Western.wav-aacbd8c1d4be492d9a998427fbb7e9b5.sample"
+path="res://.godot/imported/western.wav-b75cf2d81078a6d59007f0ee18b860ff.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Movies/Western.wav"
-dest_files=["res://.godot/imported/Western.wav-aacbd8c1d4be492d9a998427fbb7e9b5.sample"]
+source_file="res://Assets/Sound/movies/western.wav"
+dest_files=["res://.godot/imported/western.wav-b75cf2d81078a6d59007f0ee18b860ff.sample"]
 
 [params]
 

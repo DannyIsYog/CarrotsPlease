@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://7oqsamgvsegr"
-path="res://.godot/imported/horror.wav-19cef6f29f77c596bbefbb84f05aa11c.sample"
+path="res://.godot/imported/horror.wav-824c63c01e4117ce329fd25bdf278649.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Movies/horror.wav"
-dest_files=["res://.godot/imported/horror.wav-19cef6f29f77c596bbefbb84f05aa11c.sample"]
+source_file="res://Assets/Sound/movies/horror.wav"
+dest_files=["res://.godot/imported/horror.wav-824c63c01e4117ce329fd25bdf278649.sample"]
 
 [params]
 

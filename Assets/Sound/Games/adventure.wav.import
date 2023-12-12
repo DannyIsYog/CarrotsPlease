@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://jic6w505gw46"
-path="res://.godot/imported/adventure.wav-de4ede9c42017bd7e01720f21e71027a.sample"
+path="res://.godot/imported/adventure.wav-65f191bb886ca73bd361e322954bfee1.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Games/adventure.wav"
-dest_files=["res://.godot/imported/adventure.wav-de4ede9c42017bd7e01720f21e71027a.sample"]
+source_file="res://Assets/Sound/games/adventure.wav"
+dest_files=["res://.godot/imported/adventure.wav-65f191bb886ca73bd361e322954bfee1.sample"]
 
 [params]
 

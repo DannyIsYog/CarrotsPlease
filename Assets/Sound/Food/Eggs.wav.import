@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cykkkolsn44kf"
-path="res://.godot/imported/Eggs.wav-6b149ce02fad2661c6d83b39d4c0e835.sample"
+path="res://.godot/imported/eggs.wav-b6dff5d8d38fd917bf73a3a40eaf157e.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Food/Eggs.wav"
-dest_files=["res://.godot/imported/Eggs.wav-6b149ce02fad2661c6d83b39d4c0e835.sample"]
+source_file="res://Assets/Sound/food/eggs.wav"
+dest_files=["res://.godot/imported/eggs.wav-b6dff5d8d38fd917bf73a3a40eaf157e.sample"]
 
 [params]
 

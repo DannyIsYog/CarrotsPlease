@@ -29,9 +29,9 @@ var time_running = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-
-	for i in range(members_spawn_points.size()):
-		member_numbers.append(i + 1)
+	
+	var number_of_members = load_members_json().size()
+	member_numbers = generateUniqueIntegers(0, number_of_members-1, 10)
 	member_numbers.shuffle()
 	for spawn_point in items_spawn_points:
 		spawn_item(spawn_point.position)
@@ -117,7 +117,29 @@ func load_raindeer_json() -> Dictionary:
 	var content = file.get_as_text()
 	var json = JSON.new()
 	var finish = json.parse_string(content)
-	return finish["raindeers"]
+	return finish["reindeers"]
+
+func load_members_json() -> Dictionary:
+	var file = FileAccess.open(raindeer_json_file_path, FileAccess.READ)
+	var content = file.get_as_text()
+	var json = JSON.new()
+	var finish = json.parse_string(content)
+	return finish["members"]
+
+func generateUniqueIntegers(min_value: int, max_value: int, count: int) -> Array:
+	var unique_integers = []
+	
+	# Ensure that the count does not exceed the possible number of unique integers in the range
+	count = min(count, max_value - min_value + 1)
+	
+	while unique_integers.size() < count:
+		var random_integer = randi() % (max_value - min_value + 1) + min_value
+		
+		# Check if the generated integer is unique
+		if not random_integer in unique_integers:
+			unique_integers.append(random_integer)
+	
+	return unique_integers
 
 func new_sfx(sfx_path):
 	var new_sound := AudioStreamPlayer.new()

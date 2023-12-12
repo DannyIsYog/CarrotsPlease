@@ -1,0 +1,776 @@
+{
+   "members": {
+      "Filipe Silva": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "dislike",
+            "meat": "like",
+            "milk": "like",
+            "savory": "like",
+            "spicy": "like",
+            "sweets": "like"
+         },
+         "movies": {
+            "horror": "neutral",
+            "musical": "dislike",
+            "romance": "like",
+            "western": "like",
+            "+18": "neutral"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "like",
+            "horror": "neutral",
+            "platformer": "like",
+            "rpg": "dislike"
+         },
+         "music": {
+            "classical": "neutral",
+            "eletronic": "like",
+            "metal": "neutral",
+            "pop": "like",
+            "r&b": "neutral",
+            "rock": "neutral"
+         }
+      },
+      "Nuno Ribeiro": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "dislike",
+            "meat": "like",
+            "milk": "dislike",
+            "savory": "like",
+            "spicy": "like",
+            "sweets": "neutral"
+         },
+         "movies": {
+            "horror": "dislike",
+            "musical": "like",
+            "romance": "neutral",
+            "western": "dislike",
+            "+18": "like"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "neutral",
+            "horror": "dislike",
+            "platformer": "like",
+            "rpg": "neutral"
+         },
+         "music": {
+            "classical": "like",
+            "eletronic": "like",
+            "metal": "neutral",
+            "pop": "dislike",
+            "r&b": "neutral",
+            "rock": "like"
+         }
+      },
+      "Fábio Sousa": {
+         "food": {
+            "eggs": "neutral",
+            "fish": "like",
+            "fruit": "neutral",
+            "grass": "dislike",
+            "meat": "like",
+            "milk": "dislike",
+            "savory": "like",
+            "spicy": "dislike",
+            "sweets": "like"
+         },
+         "movies": {
+            "horror": "dislike",
+            "musical": "dislike",
+            "romance": "like",
+            "western": "like",
+            "+18": "like"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "dislike",
+            "horror": "dislike",
+            "platformer": "dislike",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "neutral",
+            "eletronic": "dislike",
+            "metal": "dislike",
+            "pop": "like",
+            "r&b": "neutral",
+            "rock": "dislike"
+         }
+      },
+      "Tomás Oliveira": {
+         "food": {
+            "eggs": "neutral",
+            "fish": "neutral",
+            "fruit": "neutral",
+            "grass": "neutral",
+            "meat": "like",
+            "milk": "neutral",
+            "savory": "like",
+            "spicy": "neutral",
+            "sweets": "neutral"
+         },
+         "movies": {
+            "horror": "like",
+            "musical": "dislike",
+            "romance": "dislike",
+            "western": "like",
+            "+18": "neutral"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "like",
+            "horror": "neutral",
+            "platformer": "dislike",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "like",
+            "eletronic": "dislike",
+            "metal": "like",
+            "pop": "neutral",
+            "r&b": "dislike",
+            "rock": "like"
+         }
+      },
+      "Diogo Pires": {
+         "food": {
+            "eggs": "dislike",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "dislike",
+            "meat": "like",
+            "milk": "dislike",
+            "savory": "like",
+            "spicy": "like",
+            "sweets": "neutral"
+         },
+         "movies": {
+            "horror": "neutral",
+            "musical": "neutral",
+            "romance": "like",
+            "western": "like",
+            "+18": "neutral"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "dislike",
+            "horror": "neutral",
+            "platformer": "like",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "like",
+            "eletronic": "dislike",
+            "metal": "like",
+            "pop": "neutral",
+            "r&b": "dislike",
+            "rock": "like"
+         }
+      },
+      "João Lopes": {
+         "food": {
+            "eggs": "like",
+            "fish": "neutral",
+            "fruit": "like",
+            "grass": "like",
+            "meat": "like",
+            "milk": "like",
+            "savory": "dislike",
+            "spicy": "neutral",
+            "sweets": "dislike"
+         },
+         "movies": {
+            "horror": "like",
+            "musical": "neutral",
+            "romance": "like",
+            "western": "dislike",
+            "+18": "like"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "neutral",
+            "horror": "neutral",
+            "platformer": "dislike",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "like",
+            "eletronic": "neutral",
+            "metal": "dislike",
+            "pop": "neutral",
+            "r&b": "neutral",
+            "rock": "dislike"
+         }
+      },
+      "Maria Gomes": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "neutral",
+            "meat": "neutral",
+            "milk": "like",
+            "savory": "like",
+            "spicy": "like",
+            "sweets": "like"
+         },
+         "movies": {
+            "horror": "like",
+            "musical": "like",
+            "romance": "neutral",
+            "western": "dislike",
+            "+18": "dislike"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "dislike",
+            "horror": "like",
+            "platformer": "like",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "like",
+            "eletronic": "dislike",
+            "metal": "like",
+            "pop": "like",
+            "r&b": "dislike",
+            "rock": "like"
+         }
+      },
+      "João Pamplona": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "like",
+            "meat": "like",
+            "milk": "like",
+            "savory": "like",
+            "spicy": "like",
+            "sweets": "neutral"
+         },
+         "movies": {
+            "horror": "like",
+            "musical": "like",
+            "romance": "like",
+            "western": "like",
+            "+18": "neutral"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "neutral",
+            "horror": "neutral",
+            "platformer": "neutral",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "neutral",
+            "eletronic": "neutral",
+            "metal": "neutral",
+            "pop": "like",
+            "r&b": "neutral",
+            "rock": "like"
+         }
+      },
+      "Carlos Marques": {
+         "food": {
+            "eggs": "dislike",
+            "fish": "neutral",
+            "fruit": "neutral",
+            "grass": "dislike",
+            "meat": "like",
+            "milk": "like",
+            "savory": "like",
+            "spicy": "like",
+            "sweets": "dislike"
+         },
+         "movies": {
+            "horror": "like",
+            "musical": "like",
+            "romance": "like",
+            "western": "like",
+            "+18": "like"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "like",
+            "horror": "like",
+            "platformer": "like",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "like",
+            "eletronic": "like",
+            "metal": "like",
+            "pop": "like",
+            "r&b": "like",
+            "rock": "like"
+         }
+      },
+      "Ivo Duarte": {
+         "food": {
+            "eggs": "like",
+            "fish": "dislike",
+            "fruit": "like",
+            "grass": "neutral",
+            "meat": "like",
+            "milk": "dislike",
+            "savory": "neutral",
+            "spicy": "dislike",
+            "sweets": "neutral"
+         },
+         "movies": {
+            "horror": "like",
+            "musical": "dislike",
+            "romance": "like",
+            "western": "dislike",
+            "+18": "like"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "dislike",
+            "horror": "like",
+            "platformer": "neutral",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "like",
+            "eletronic": "like",
+            "metal": "like",
+            "pop": "neutral",
+            "r&b": "dislike",
+            "rock": "like"
+         }
+      },
+      "Diogo Silva": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "dislike",
+            "grass": "neutral",
+            "meat": "like",
+            "milk": "neutral",
+            "savory": "like",
+            "spicy": "like",
+            "sweets": "neutral"
+         },
+         "movies": {
+            "horror": "neutral",
+            "musical": "neutral",
+            "romance": "neutral",
+            "western": "neutral",
+            "+18": "neutral"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "like",
+            "horror": "neutral",
+            "platformer": "neutral",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "neutral",
+            "eletronic": "like",
+            "metal": "like",
+            "pop": "like",
+            "r&b": "neutral",
+            "rock": "like"
+         }
+      },
+      "João Batista": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "neutral",
+            "meat": "like",
+            "milk": "like",
+            "savory": "like",
+            "spicy": "dislike",
+            "sweets": "like"
+         },
+         "movies": {
+            "horror": "like",
+            "musical": "dislike",
+            "romance": "neutral",
+            "western": "dislike",
+            "+18": "like"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "dislike",
+            "horror": "dislike",
+            "platformer": "like",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "neutral",
+            "eletronic": "dislike",
+            "metal": "neutral",
+            "pop": "like",
+            "r&b": "dislike",
+            "rock": "like"
+         }
+      },
+      "Sam Costa": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "like",
+            "meat": "like",
+            "milk": "like",
+            "savory": "neutral",
+            "spicy": "like",
+            "sweets": "like"
+         },
+         "movies": {
+            "horror": "neutral",
+            "musical": "like",
+            "romance": "like",
+            "western": "dislike",
+            "+18": "like"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "neutral",
+            "horror": "dislike",
+            "platformer": "like",
+            "rpg": "neutral"
+         },
+         "music": {
+            "classical": "like",
+            "eletronic": "like",
+            "metal": "dislike",
+            "pop": "like",
+            "r&b": "neutral",
+            "rock": "like"
+         }
+      }
+   },
+   "reindeers": {
+      "Donner": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "like",
+            "meat": "like",
+            "milk": "dislike",
+            "savory": "dislike",
+            "spicy": "like",
+            "sweets": "dislike"
+         },
+         "movies": {
+            "horror": "like",
+            "musical": "neutral",
+            "romance": "dislike",
+            "western": "neutral",
+            "+18": "neutral"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "neutral",
+            "horror": "like",
+            "platformer": "dislike",
+            "rpg": "dislike"
+         },
+         "music": {
+            "classical": "neutral",
+            "eletronic": "like",
+            "metal": "like",
+            "pop": "dislike",
+            "r&b": "dislike",
+            "rock": "neutral"
+         }
+      },
+      "Blitzen": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "like",
+            "meat": "dislike",
+            "milk": "dislike",
+            "savory": "dislike",
+            "spicy": "dislike",
+            "sweets": "dislike"
+         },
+         "movies": {
+            "horror": "like",
+            "musical": "dislike",
+            "romance": "dislike",
+            "western": "neutral",
+            "+18": "like"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "dislike",
+            "horror": "like",
+            "platformer": "neutral",
+            "rpg": "neutral"
+         },
+         "music": {
+            "classical": "neutral",
+            "eletronic": "like",
+            "metal": "like",
+            "pop": "dislike",
+            "r&b": "dislike",
+            "rock": "neutral"
+         }
+      },
+      "Dancer": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "like",
+            "meat": "dislike",
+            "milk": "dislike",
+            "savory": "dislike",
+            "spicy": "dislike",
+            "sweets": "dislike"
+         },
+         "movies": {
+            "horror": "dislike",
+            "musical": "like",
+            "romance": "like",
+            "western": "neutral",
+            "+18": "dislike"
+         },
+         "games": {
+            "adventure": "dislike",
+            "fps": "dislike",
+            "horror": "dislike",
+            "platformer": "neutral",
+            "rpg": "neutral"
+         },
+         "music": {
+            "classical": "like",
+            "eletronic": "like",
+            "metal": "dislike",
+            "pop": "like",
+            "r&b": "neutral",
+            "rock": "dislike"
+         }
+      },
+      "Dasher": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "like",
+            "meat": "dislike",
+            "milk": "dislike",
+            "savory": "dislike",
+            "spicy": "dislike",
+            "sweets": "dislike"
+         },
+         "movies": {
+            "horror": "neutral",
+            "musical": "neutral",
+            "romance": "dislike",
+            "western": "neutral",
+            "+18": "like"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "dislike",
+            "horror": "neutral",
+            "platformer": "like",
+            "rpg": "dislike"
+         },
+         "music": {
+            "classical": "dislike",
+            "eletronic": "like",
+            "metal": "like",
+            "pop": "dislike",
+            "r&b": "dislike",
+            "rock": "neutral"
+         }
+      },
+      "Prancer": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "like",
+            "meat": "dislike",
+            "milk": "dislike",
+            "savory": "dislike",
+            "spicy": "dislike",
+            "sweets": "dislike"
+         },
+         "movies": {
+            "horror": "dislike",
+            "musical": "like",
+            "romance": "dislike",
+            "western": "like",
+            "+18": "neutral"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "dislike",
+            "horror": "dislike",
+            "platformer": "like",
+            "rpg": "neutral"
+         },
+         "music": {
+            "classical": "dislike",
+            "eletronic": "like",
+            "metal": "neutral",
+            "pop": "like",
+            "r&b": "dislike",
+            "rock": "neutral"
+         }
+      },
+      "Comet": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "like",
+            "meat": "dislike",
+            "milk": "dislike",
+            "savory": "dislike",
+            "spicy": "dislike",
+            "sweets": "dislike"
+         },
+         "movies": {
+            "horror": "dislike",
+            "musical": "dislike",
+            "romance": "dislike",
+            "western": "dislike",
+            "+18": "neutral"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "neutral",
+            "horror": "neutral",
+            "platformer": "dislike",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "like",
+            "eletronic": "like",
+            "metal": "dislike",
+            "pop": "dislike",
+            "r&b": "dislike",
+            "rock": "neutral"
+         }
+      },
+      "Cupid": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "like",
+            "meat": "dislike",
+            "milk": "dislike",
+            "savory": "dislike",
+            "spicy": "dislike",
+            "sweets": "like"
+         },
+         "movies": {
+            "horror": "dislike",
+            "musical": "like",
+            "romance": "like",
+            "western": "dislike",
+            "+18": "neutral"
+         },
+         "games": {
+            "adventure": "dislike",
+            "fps": "like",
+            "horror": "dislike",
+            "platformer": "neutral",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "like",
+            "eletronic": "dislike",
+            "metal": "dislike",
+            "pop": "like",
+            "r&b": "like",
+            "rock": "neutral"
+         }
+      },
+      "Vixen": {
+         "food": {
+            "eggs": "like",
+            "fish": "like",
+            "fruit": "like",
+            "grass": "like",
+            "meat": "neutral",
+            "milk": "dislike",
+            "savory": "neutral",
+            "spicy": "like",
+            "sweets": "neutral"
+         },
+         "movies": {
+            "horror": "like",
+            "musical": "dislike",
+            "romance": "dislike",
+            "western": "neutral",
+            "+18": "like"
+         },
+         "games": {
+            "adventure": "like",
+            "fps": "dislike",
+            "horror": "like",
+            "platformer": "dislike",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "dislike",
+            "eletronic": "like",
+            "metal": "neutral",
+            "pop": "dislike",
+            "r&b": "like",
+            "rock": "like"
+         }
+      },
+      "Rudolph": {
+         "food": {
+            "eggs": "neutral",
+            "fish": "neutral",
+            "fruit": "like",
+            "grass": "like",
+            "meat": "dislike",
+            "milk": "dislike",
+            "savory": "dislike",
+            "spicy": "dislike",
+            "sweets": "like"
+         },
+         "movies": {
+            "horror": "dislike",
+            "musical": "like",
+            "romance": "like",
+            "western": "neutral",
+            "+18": "dislike"
+         },
+         "games": {
+            "adventure": "neutral",
+            "fps": "dislike",
+            "horror": "dislike",
+            "platformer": "like",
+            "rpg": "like"
+         },
+         "music": {
+            "classical": "like",
+            "eletronic": "neutral",
+            "metal": "dislike",
+            "pop": "like",
+            "r&b": "like",
+            "rock": "neutral"
+         }
+      }
+   }
+}

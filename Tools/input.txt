@@ -1,0 +1,23 @@
+Name (First and Last)	Food [Eggs]	Food [Fish]	Food [Fruit]	Food [Grass]	Food [Meat]	Food [Milk]	Food [Savory]	Food [Spicy]	Food [Sweets]	Movies [Horror]	Movies [Musical]	Movies [Romance]	Movies [Western]	Movies [+18]	Games [Adventure]	Games [FPS]	Games [Horror]	Games [Platformer]	Games [RPG]	Music [Classical]	Music [Eletronic]	Music [Metal]	Music [Pop]	Music [R&B]	Music [Rock]
+Filipe Silva	Like	Like	Like	Dislike	Like	Like	Like	Like	Like	Neutral	Dislike	Like	Like	Neutral	Like	Like	Neutral	Like	Dislike	Neutral	Like	Neutral	Like	Neutral	Neutral
+Nuno Ribeiro	Like	Like	Like	Dislike	Like	Dislike	Like	Like	Neutral	Dislike	Like	Neutral	Dislike	Like	Like	Neutral	Dislike	Like	Neutral	Like	Like	Neutral	Dislike	Neutral	Like
+Fábio Sousa	Neutral	Like	Neutral	Dislike	Like	Dislike	Like	Dislike	Like	Dislike	Dislike	Like	Like	Like	Like	Dislike	Dislike	Dislike	Like	Neutral	Dislike	Dislike	Like	Neutral	Dislike
+Tomás Oliveira	Neutral	Neutral	Neutral	Neutral	Like	Neutral	Like	Neutral	Neutral	Like	Dislike	Dislike	Like	Neutral	Like	Like	Neutral	Dislike	Like	Like	Dislike	Like	Neutral	Dislike	Like
+Donner	Like	Like	Like	Like	Like	Dislike	Dislike	Like	Dislike	Like	Neutral	Dislike	Neutral	Neutral	Like	Neutral	Like	Dislike	Dislike	Neutral	Like	Like	Dislike	Dislike	Neutral
+Blitzen	Like	Like	Like	Like	Dislike	Dislike	Dislike	Dislike	Dislike	Like	Dislike	Dislike	Neutral	Like	Like	Dislike	Like	Neutral	Neutral	Neutral	Like	Like	Dislike	Dislike	Neutral
+Diogo Pires	Dislike	Like	Like	Dislike	Like	Dislike	Like	Like	Neutral	Neutral	Neutral	Like	Like	Neutral	Like	Dislike	Neutral	Like	Like	Like	Dislike	Like	Neutral	Dislike	Like
+Dancer	Like	Like	Like	Like	Dislike	Dislike	Dislike	Dislike	Dislike	Dislike	Like	Like	Neutral	Dislike	Dislike	Dislike	Dislike	Neutral	Neutral	Like	Like	Dislike	Like	Neutral	Dislike
+Dasher	Like	Like	Like	Like	Dislike	Dislike	Dislike	Dislike	Dislike	Neutral	Neutral	Dislike	Neutral	Like	Like	Dislike	Neutral	Like	Dislike	Dislike	Like	Like	Dislike	Dislike	Neutral
+Prancer	Like	Like	Like	Like	Dislike	Dislike	Dislike	Dislike	Dislike	Dislike	Like	Dislike	Like	Neutral	Like	Dislike	Dislike	Like	Neutral	Dislike	Like	Neutral	Like	Dislike	Neutral
+João Lopes	Like	Neutral	Like	Like	Like	Like	Dislike	Neutral	Dislike	Like	Neutral	Like	Dislike	Like	Like	Neutral	Neutral	Dislike	Like	Like	Neutral	Dislike	Neutral	Neutral	Dislike
+Comet	Like	Like	Like	Like	Dislike	Dislike	Dislike	Dislike	Dislike	Dislike	Dislike	Dislike	Dislike	Neutral	Like	Neutral	Neutral	Dislike	Like	Like	Like	Dislike	Dislike	Dislike	Neutral
+Cupid	Like	Like	Like	Like	Dislike	Dislike	Dislike	Dislike	Like	Dislike	Like	Like	Dislike	Neutral	Dislike	Like	Dislike	Neutral	Like	Like	Dislike	Dislike	Like	Like	Neutral
+Vixen	Like	Like	Like	Like	Neutral	Dislike	Neutral	Like	Neutral	Like	Dislike	Dislike	Neutral	Like	Like	Dislike	Like	Dislike	Like	Dislike	Like	Neutral	Dislike	Like	Like
+Rudolph	Neutral	Neutral	Like	Like	Dislike	Dislike	Dislike	Dislike	Like	Dislike	Like	Like	Neutral	Dislike	Neutral	Dislike	Dislike	Like	Like	Like	Neutral	Dislike	Like	Like	Neutral
+Maria Gomes	Like	Like	Like	Neutral	Neutral	Like	Like	Like	Like	Like	Like	Neutral	Dislike	Dislike	Like	Dislike	Like	Like	Like	Like	Dislike	Like	Like	Dislike	Like
+João Pamplona 	Like	Like	Like	Like	Like	Like	Like	Like	Neutral	Like	Like	Like	Like	Neutral	Like	Neutral	Neutral	Neutral	Like	Neutral	Neutral	Neutral	Like	Neutral	Like
+Carlos Marques	Dislike	Neutral	Neutral	Dislike	Like	Like	Like	Like	Dislike	Like	Like	Like	Like	Like	Like	Like	Like	Like	Like	Like	Like	Like	Like	Like	Like
+Ivo Duarte 	Like	Dislike	Like	Neutral	Like	Dislike	Neutral	Dislike	Neutral	Like	Dislike	Like	Dislike	Like	Like	Dislike	Like	Neutral	Like	Like	Like	Like	Neutral	Dislike	Like
+Diogo Silva	Like	Like	Dislike	Neutral	Like	Neutral	Like	Like	Neutral	Neutral	Neutral	Neutral	Neutral	Neutral	Like	Like	Neutral	Neutral	Like	Neutral	Like	Like	Like	Neutral	Like
+João Batista	Like	Like	Like	Neutral	Like	Like	Like	Dislike	Like	Like	Dislike	Neutral	Dislike	Like	Like	Dislike	Dislike	Like	Like	Neutral	Dislike	Neutral	Like	Dislike	Like
+Sam Costa 	Like	Like	Like	Like	Like	Like	Neutral	Like	Like	Neutral	Like	Like	Dislike	Like	Like	Neutral	Dislike	Like	Neutral	Like	Like	Dislike	Like	Neutral	Like

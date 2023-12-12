@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dsulwvfob3bjk"
-path="res://.godot/imported/Meat.wav-e3b422aeafb9c08f475740e458d98f0d.sample"
+path="res://.godot/imported/meat.wav-58a29e7691c9b3c6a217b11270163b90.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Food/Meat.wav"
-dest_files=["res://.godot/imported/Meat.wav-e3b422aeafb9c08f475740e458d98f0d.sample"]
+source_file="res://Assets/Sound/food/meat.wav"
+dest_files=["res://.godot/imported/meat.wav-58a29e7691c9b3c6a217b11270163b90.sample"]
 
 [params]
 

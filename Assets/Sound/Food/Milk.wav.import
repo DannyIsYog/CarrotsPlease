@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cy676dc5qyws"
-path="res://.godot/imported/Milk.wav-7ec1d6c9d86d274ef7daf660ffdb85a2.sample"
+path="res://.godot/imported/milk.wav-265b14cef98abe6124fd4651c94c1a82.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Food/Milk.wav"
-dest_files=["res://.godot/imported/Milk.wav-7ec1d6c9d86d274ef7daf660ffdb85a2.sample"]
+source_file="res://Assets/Sound/food/milk.wav"
+dest_files=["res://.godot/imported/milk.wav-265b14cef98abe6124fd4651c94c1a82.sample"]
 
 [params]
 

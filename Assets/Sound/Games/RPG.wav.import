@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cy2uxmf0s71i0"
-path="res://.godot/imported/RPG.wav-9b649ac51c6a2bb54541f97ab658c33e.sample"
+path="res://.godot/imported/rpg.wav-fce1fc659e6cc42a4f68852b599caf5c.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Games/RPG.wav"
-dest_files=["res://.godot/imported/RPG.wav-9b649ac51c6a2bb54541f97ab658c33e.sample"]
+source_file="res://Assets/Sound/games/rpg.wav"
+dest_files=["res://.godot/imported/rpg.wav-fce1fc659e6cc42a4f68852b599caf5c.sample"]
 
 [params]
 

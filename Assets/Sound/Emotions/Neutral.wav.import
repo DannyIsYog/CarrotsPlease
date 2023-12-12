@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bssgb6157sjrm"
-path="res://.godot/imported/Neutral.wav-33d2bb60faeb5dfbc27f6f8d04d7a716.sample"
+path="res://.godot/imported/neutral.wav-8c768aad4b03027e2f8f90e0c3daf7b9.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Emotions/Neutral.wav"
-dest_files=["res://.godot/imported/Neutral.wav-33d2bb60faeb5dfbc27f6f8d04d7a716.sample"]
+source_file="res://Assets/Sound/Emotions/neutral.wav"
+dest_files=["res://.godot/imported/neutral.wav-8c768aad4b03027e2f8f90e0c3daf7b9.sample"]
 
 [params]
 

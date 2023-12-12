@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ci0tlfksf0l50"
-path="res://.godot/imported/fps.wav-13ec095769dd64b5842e085589f0863f.sample"
+path="res://.godot/imported/fps.wav-e155567081662599481fb3b95caa844f.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Games/fps.wav"
-dest_files=["res://.godot/imported/fps.wav-13ec095769dd64b5842e085589f0863f.sample"]
+source_file="res://Assets/Sound/games/fps.wav"
+dest_files=["res://.godot/imported/fps.wav-e155567081662599481fb3b95caa844f.sample"]
 
 [params]
 

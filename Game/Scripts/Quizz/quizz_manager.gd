@@ -94,4 +94,4 @@ func load_json() -> Dictionary:
 	var content = file.get_as_text()
 	var json = JSON.new()
 	var finish = json.parse_string(content)
-	return finish["raindeers"]
+	return finish["reindeers"]

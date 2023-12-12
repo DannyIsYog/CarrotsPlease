@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ctlruke7gskcr"
-path="res://.godot/imported/Spicy.wav-994e8994daac6df3124d559bb9693043.sample"
+path="res://.godot/imported/spicy.wav-750d23cef8af18acdddb1d5a37997b0d.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Food/Spicy.wav"
-dest_files=["res://.godot/imported/Spicy.wav-994e8994daac6df3124d559bb9693043.sample"]
+source_file="res://Assets/Sound/food/spicy.wav"
+dest_files=["res://.godot/imported/spicy.wav-750d23cef8af18acdddb1d5a37997b0d.sample"]
 
 [params]
 

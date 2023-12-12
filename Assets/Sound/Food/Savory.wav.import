@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://chtqcjbxugbtu"
-path="res://.godot/imported/Savory.wav-0f166b7a76ff584da6e59c3d82010833.sample"
+path="res://.godot/imported/savory.wav-936f93363b12c7d277411bff37e094fc.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Food/Savory.wav"
-dest_files=["res://.godot/imported/Savory.wav-0f166b7a76ff584da6e59c3d82010833.sample"]
+source_file="res://Assets/Sound/food/savory.wav"
+dest_files=["res://.godot/imported/savory.wav-936f93363b12c7d277411bff37e094fc.sample"]
 
 [params]
 

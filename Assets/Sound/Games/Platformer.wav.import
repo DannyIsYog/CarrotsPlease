@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c3u11kvevikjh"
-path="res://.godot/imported/Platformer.wav-43693077e1a7efe733ce835351d31604.sample"
+path="res://.godot/imported/platformer.wav-60d407c6ff6219bcbb06041f27ee04fc.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Games/Platformer.wav"
-dest_files=["res://.godot/imported/Platformer.wav-43693077e1a7efe733ce835351d31604.sample"]
+source_file="res://Assets/Sound/games/platformer.wav"
+dest_files=["res://.godot/imported/platformer.wav-60d407c6ff6219bcbb06041f27ee04fc.sample"]
 
 [params]
 

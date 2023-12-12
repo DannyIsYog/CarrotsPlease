@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bff50kls02bp7"
-path="res://.godot/imported/Romance.wav-727d8466b606c2f4d88d2389eeb80cbd.sample"
+path="res://.godot/imported/romance.wav-74473051952810461fe648b6d61313d9.sample"
 
 [deps]
 
-source_file="res://Assets/Sound/Movies/Romance.wav"
-dest_files=["res://.godot/imported/Romance.wav-727d8466b606c2f4d88d2389eeb80cbd.sample"]
+source_file="res://Assets/Sound/movies/romance.wav"
+dest_files=["res://.godot/imported/romance.wav-74473051952810461fe648b6d61313d9.sample"]
 
 [params]
 
