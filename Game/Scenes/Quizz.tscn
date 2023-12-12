@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b40debju3wyt4"]
+[gd_scene load_steps=9 format=3 uid="uid://b40debju3wyt4"]
 
 [ext_resource type="Script" path="res://Game/Scripts/Quizz/quizz_manager.gd" id="1_fe76o"]
 [ext_resource type="Texture2D" uid="uid://c3jdbbrjx1bhc" path="res://Assets/Gameplay/Quadrado_branco.png" id="1_mhh23"]
@@ -7,10 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://c3i4q6dvwcrne" path="res://Game/Scenes/Quizz/like_button.tscn" id="5_xuitf"]
 [ext_resource type="PackedScene" uid="uid://bvu88bnsdekbv" path="res://Game/Scenes/Quizz/neutral_button.tscn" id="6_s3pap"]
 [ext_resource type="PackedScene" uid="uid://bm1llxempcux5" path="res://Game/Scenes/MainMenu/back_to_main_menu_button.tscn" id="7_2vkhb"]
+[ext_resource type="PackedScene" uid="uid://cjxtw8h232fkp" path="res://Game/Scenes/MainMenu/share_button.tscn" id="8_lj0ln"]
 
-[node name="Quizz" type="Node2D" node_paths=PackedStringArray("buttons")]
+[node name="Quizz" type="Node2D" node_paths=PackedStringArray("buttons", "share_button")]
 script = ExtResource("1_fe76o")
 buttons = [NodePath("dislike_button"), NodePath("like_button"), NodePath("neutral_button")]
+share_button = NodePath("share_button")
 json_file_path = "res://Assets/data.json"
 
 [node name="Background" type="Sprite2D" parent="."]
@@ -70,3 +72,6 @@ theme_override_colors/table_border = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_cx6mc")
 theme_override_font_sizes/normal_font_size = 70
 bbcode_enabled = true
+
+[node name="share_button" parent="." instance=ExtResource("8_lj0ln")]
+position = Vector2(946, 877)

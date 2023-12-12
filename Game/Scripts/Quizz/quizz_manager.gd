@@ -5,14 +5,19 @@ extends Node2D
 @onready var raindeerImage = $RaindeerImage
 @export var buttons : Array[Node2D]
 
+@export var share_button : Node2D
+
 @export var json_file_path : String
 
 var questions = []
 var raindeer_likes = {}
 var player_raindeer_correspondance = {}
 
+var final_deer = ""
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	share_button.visible = false
 	raindeer_likes = load_json()
 	for names in raindeer_likes.keys():
 		player_raindeer_correspondance[names] = 0
@@ -47,10 +52,12 @@ func set_question():
 		question_text.text = "[center]Do you enjoy " + item + " games?[/center]"
 
 func end_quizz():
+	share_button.visible = true
 	for button in buttons:
 		button.queue_free()
 	print(player_raindeer_correspondance)
 	var raindeer_name = findHighestKey(player_raindeer_correspondance)
+	final_deer = raindeer_name
 	question_text.text = "[center]You are just like " + raindeer_name + "!!![/center]"
 	science_text.text = "[center]Scientifically Proven![/center]"
 	var path_to_image = "res://Assets/Raindeers/" + raindeer_name + ".png"
